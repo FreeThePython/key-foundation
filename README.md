@@ -19,9 +19,15 @@ The manifesto is the philosophical foundation of KEY. It defines what we believe
 
 ### Current Chapters
 
+#### Book I — The Belief
+
 1. [The Belief](docs/manifesto/01-THE-BELIEF.md)
 2. [Worlds With Gravity](docs/manifesto/02-WORLDS-WITH-GRAVITY.md)
 3. [Mystery as Hidden Truth](docs/manifesto/03-MYSTERY-AS-HIDDEN-TRUTH.md)
+
+#### Book II — The World
+
+4. [The World Constitution](docs/manifesto/04-THE-WORLD-CONSTITUTION.md)
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
