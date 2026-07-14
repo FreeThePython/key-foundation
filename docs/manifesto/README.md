@@ -23,11 +23,15 @@ The manifesto is written as a living work. Each chapter should be read as both a
 3. [Mystery as Hidden Truth](03-MYSTERY-AS-HIDDEN-TRUTH.md)  
    Mystery begins with truths embedded in the world before the player knows to ask. Discovery changes not only what the player knows, but what the story means.
 
-## Planned Books
+### Book II — The World
+
+4. [The World Constitution](04-THE-WORLD-CONSTITUTION.md)  
+   A living world requires foundational truths, laws, limits, causes, and relationships that define possibility without predetermining outcome.
+
+## Planned Chapters
 
 ### Book II — The World
 
-- The World Constitution
 - History That Remains Active
 - Cosmology and Creation
 - Magic With Cost and Consequence
