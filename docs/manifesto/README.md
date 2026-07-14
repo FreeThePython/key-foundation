@@ -31,11 +31,13 @@ The manifesto is written as a living work. Each chapter should be read as both a
 5. [History That Remains Active](05-HISTORY-THAT-REMAINS-ACTIVE.md)  
    History is not decorative lore. It is the inheritance, pressure, unresolved obligation, and contested memory that continues shaping the present. This chapter also establishes the continuity skeptic as an independent reviewer before generated history becomes canon.
 
+6. [Cosmology and Creation](06-COSMOLOGY-AND-CREATION.md)  
+   Creation is the deepest causal layer of the world. Cosmology must shape gods, death, consciousness, fate, institutions, mystery, and daily life while preserving a clear distinction between objective truth, belief, interpretation, and the permanently unknowable.
+
 ## Planned Chapters
 
 ### Book II — The World
 
-- Cosmology and Creation
 - Magic With Cost and Consequence
 - Cultures, Kingdoms, and Institutions
 - Truth, Belief, and Myth
