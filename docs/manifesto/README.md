@@ -28,11 +28,13 @@ The manifesto is written as a living work. Each chapter should be read as both a
 4. [The World Constitution](04-THE-WORLD-CONSTITUTION.md)  
    A living world requires foundational truths, laws, limits, causes, and relationships that define possibility without predetermining outcome.
 
+5. [History That Remains Active](05-HISTORY-THAT-REMAINS-ACTIVE.md)  
+   History is not decorative lore. It is the inheritance, pressure, unresolved obligation, and contested memory that continues shaping the present. This chapter also establishes the continuity skeptic as an independent reviewer before generated history becomes canon.
+
 ## Planned Chapters
 
 ### Book II — The World
 
-- History That Remains Active
 - Cosmology and Creation
 - Magic With Cost and Consequence
 - Cultures, Kingdoms, and Institutions
