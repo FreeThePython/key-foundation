@@ -28,6 +28,7 @@ The manifesto is the philosophical foundation of KEY. It defines what we believe
 #### Book II — The World
 
 4. [The World Constitution](docs/manifesto/04-THE-WORLD-CONSTITUTION.md)
+5. [History That Remains Active](docs/manifesto/05-HISTORY-THAT-REMAINS-ACTIVE.md)
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
