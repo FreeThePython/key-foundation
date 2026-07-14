@@ -4,24 +4,32 @@
 
 This repository is the source of truth for the vision, manifesto, narrative philosophy, architecture, and prototype definition of KEY: an AI narrative-world engine designed to create coherent worlds, believable characters, meaningful choices, and persistent consequences.
 
-## Manifesto
-
-The living manifesto is located at:
-
-- `docs/manifesto/KEY-MANIFESTO.md`
-
-Its cover image is referenced at:
-
-- `assets/key-manifesto-cover.jpg`
-
 ## Start Here
 
-1. `docs/manifesto/KEY-MANIFESTO.md`
-2. `docs/vision/KEY-VISION.md`
-3. `docs/product/PROTOTYPE-DEFINITION.md`
-4. `docs/architecture/KEY-CONSTITUTION.md`
-5. `docs/evaluation/KEY-EVALUATION-FRAMEWORK.md`
-6. `AGENTS.md`
+1. [The KEY Manifesto](docs/manifesto/README.md)
+2. [KEY Vision](docs/vision/KEY-VISION.md)
+3. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+4. [KEY Constitution](docs/architecture/KEY-CONSTITUTION.md)
+5. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+6. [Codex and Agent Instructions](AGENTS.md)
+
+## The KEY Manifesto
+
+The manifesto is the philosophical foundation of KEY. It defines what we believe about story, world-building, choice, consequence, mystery, character, and narrative intelligence before those beliefs become architecture and code.
+
+### Current Chapters
+
+1. [The Belief](docs/manifesto/01-THE-BELIEF.md)
+2. [Worlds With Gravity](docs/manifesto/02-WORLDS-WITH-GRAVITY.md)
+3. [Mystery as Hidden Truth](docs/manifesto/03-MYSTERY-AS-HIDDEN-TRUTH.md)
+
+The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
+
+## Cover Art
+
+The manifesto cover is stored at:
+
+- `assets/key-manifesto-cover.jpg`
 
 ## Core Principle
 
