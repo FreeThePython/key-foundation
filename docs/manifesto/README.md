@@ -34,11 +34,13 @@ The manifesto is written as a living work. Each chapter should be read as both a
 6. [Cosmology and Creation](06-COSMOLOGY-AND-CREATION.md)  
    Creation is the deepest causal layer of the world. Cosmology must shape gods, death, consciousness, fate, institutions, mystery, and daily life while preserving a clear distinction between objective truth, belief, interpretation, and the permanently unknowable.
 
+7. [Magic With Cost and Consequence](07-MAGIC-WITH-COST-AND-CONSEQUENCE.md)  
+   Magic expands possibility without erasing causality. Every capability must possess a source, requirements, limits, costs, consequences, social effects, and enough internal coherence to survive independent scrutiny.
+
 ## Planned Chapters
 
 ### Book II — The World
 
-- Magic With Cost and Consequence
 - Cultures, Kingdoms, and Institutions
 - Truth, Belief, and Myth
 
