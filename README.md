@@ -37,6 +37,7 @@ The manifesto is the philosophical foundation of KEY. It defines what we believe
 #### Book III — The Story
 
 10. [Narrative Anchors](docs/manifesto/10-NARRATIVE-ANCHORS.md)
+11. [The Possibility Graph](docs/manifesto/11-THE-POSSIBILITY-GRAPH.md)
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
