@@ -48,11 +48,13 @@ The manifesto is written as a living work. Each chapter should be read as both a
 10. [Narrative Anchors](10-NARRATIVE-ANCHORS.md)  
     Narrative Anchors create direction without predetermination. They identify pressures that can no longer remain unchanged, allowing story to emerge from world truth, character agency, time, and consequence.
 
+11. [The Possibility Graph](11-THE-POSSIBILITY-GRAPH.md)  
+    The Possibility Graph is the living network of futures supported by current world state. It connects pressure, character agency, knowledge, time, choice, and consequence without reducing story to predefined branches.
+
 ## Planned Chapters
 
 ### Book III — The Story
 
-- The Possibility Graph
 - Choice and Consequence
 - Story Momentum
 - Revelation and Reinterpretation
