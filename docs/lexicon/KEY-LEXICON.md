@@ -70,6 +70,36 @@ Possibility is not prediction and does not guarantee occurrence.
 
 ---
 
+## Choice
+
+An action, refusal, delay, silence, interpretation, delegation, sacrifice, or other exercise of agency that changes what is true, known, valued, possible, or likely within the world.
+
+A selection is not meaningful merely because it appears in an interface. A meaningful Choice enters a living causal system and makes at least one future materially different.
+
+Choice does not guarantee control over outcome.
+
+---
+
+## Consequence
+
+A causally supported change that follows from one or more choices, conditions, pressures, omissions, or actions within the world.
+
+A Consequence may be immediate, delayed, hidden, cascading, emergent, personal, relational, institutional, cultural, material, or narrative.
+
+Consequence is not synonymous with reward or punishment. It is the world becoming different for reasons that can be traced.
+
+---
+
+## Consequence Record
+
+The structured representation of a significant consequence and its causal relationships.
+
+It may include initiating choices, contributing causes, responsible actors, affected entities, immediate and delayed effects, visibility, interpretations, reversibility, duration, resulting Narrative Anchors, and changes to the Possibility Graph.
+
+A Consequence Record preserves the structure required for coherent future storytelling.
+
+---
+
 ## Story Momentum
 
 The changing dramatic and emotional energy created as pressures develop, intersect, transform, and resolve.
