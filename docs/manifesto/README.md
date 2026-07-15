@@ -37,11 +37,13 @@ The manifesto is written as a living work. Each chapter should be read as both a
 7. [Magic With Cost and Consequence](07-MAGIC-WITH-COST-AND-CONSEQUENCE.md)  
    Magic expands possibility without erasing causality. Every capability must possess a source, requirements, limits, costs, consequences, social effects, and enough internal coherence to survive independent scrutiny.
 
+8. [Cultures, Kingdoms, and Institutions](08-CULTURES-KINGDOMS-AND-INSTITUTIONS.md)  
+   Culture emerges from history, geography, resources, belief, and power. Kingdoms and institutions become believable when they possess legitimacy, incentives, internal diversity, real functions, and consequences for the people living inside them.
+
 ## Planned Chapters
 
 ### Book II — The World
 
-- Cultures, Kingdoms, and Institutions
 - Truth, Belief, and Myth
 
 ### Book III — The Story
