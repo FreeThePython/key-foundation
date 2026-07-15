@@ -43,11 +43,15 @@ The manifesto is written as a living work. Each chapter should be read as both a
 9. [Truth, Belief, and Myth](09-TRUTH-BELIEF-AND-MYTH.md)  
    Truth gives the world coherence, belief gives characters perspective, and myth gives cultures memory and meaning. Story begins in the distance between what is true and what people understand, defend, conceal, or choose to believe.
 
+### Book III — The Story
+
+10. [Narrative Anchors](10-NARRATIVE-ANCHORS.md)  
+    Narrative Anchors create direction without predetermination. They identify pressures that can no longer remain unchanged, allowing story to emerge from world truth, character agency, time, and consequence.
+
 ## Planned Chapters
 
 ### Book III — The Story
 
-- Narrative Anchors
 - The Possibility Graph
 - Choice and Consequence
 - Story Momentum
