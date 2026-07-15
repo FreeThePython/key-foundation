@@ -40,11 +40,10 @@ The manifesto is written as a living work. Each chapter should be read as both a
 8. [Cultures, Kingdoms, and Institutions](08-CULTURES-KINGDOMS-AND-INSTITUTIONS.md)  
    Culture emerges from history, geography, resources, belief, and power. Kingdoms and institutions become believable when they possess legitimacy, incentives, internal diversity, real functions, and consequences for the people living inside them.
 
+9. [Truth, Belief, and Myth](09-TRUTH-BELIEF-AND-MYTH.md)  
+   Truth gives the world coherence, belief gives characters perspective, and myth gives cultures memory and meaning. Story begins in the distance between what is true and what people understand, defend, conceal, or choose to believe.
+
 ## Planned Chapters
-
-### Book II — The World
-
-- Truth, Belief, and Myth
 
 ### Book III — The Story
 
