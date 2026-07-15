@@ -7,11 +7,12 @@ This repository is the source of truth for the vision, manifesto, narrative phil
 ## Start Here
 
 1. [The KEY Manifesto](docs/manifesto/README.md)
-2. [KEY Vision](docs/vision/KEY-VISION.md)
-3. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-4. [KEY Constitution](docs/architecture/KEY-CONSTITUTION.md)
-5. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-6. [Codex and Agent Instructions](AGENTS.md)
+2. [The KEY Lexicon](docs/lexicon/README.md)
+3. [KEY Vision](docs/vision/KEY-VISION.md)
+4. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+5. [KEY Constitution](docs/architecture/KEY-CONSTITUTION.md)
+6. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+7. [Codex and Agent Instructions](AGENTS.md)
 
 ## The KEY Manifesto
 
@@ -38,8 +39,15 @@ The manifesto is the philosophical foundation of KEY. It defines what we believe
 
 10. [Narrative Anchors](docs/manifesto/10-NARRATIVE-ANCHORS.md)
 11. [The Possibility Graph](docs/manifesto/11-THE-POSSIBILITY-GRAPH.md)
+13. [Story Momentum](docs/manifesto/13-STORY-MOMENTUM.md)
+
+Chapter 12, **Choice and Consequence**, remains planned and will be added without renumbering Story Momentum.
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
+
+## Canonical Reference
+
+The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) defines the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Story Momentum, Narrative Resonance, the Continuity Skeptic, and Canonical World State.
 
 ## Cover Art
 
