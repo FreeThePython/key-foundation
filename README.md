@@ -34,6 +34,10 @@ The manifesto is the philosophical foundation of KEY. It defines what we believe
 8. [Cultures, Kingdoms, and Institutions](docs/manifesto/08-CULTURES-KINGDOMS-AND-INSTITUTIONS.md)
 9. [Truth, Belief, and Myth](docs/manifesto/09-TRUTH-BELIEF-AND-MYTH.md)
 
+#### Book III — The Story
+
+10. [Narrative Anchors](docs/manifesto/10-NARRATIVE-ANCHORS.md)
+
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
 ## Cover Art
