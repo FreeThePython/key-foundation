@@ -31,6 +31,7 @@ The manifesto is the philosophical foundation of KEY. It defines what we believe
 5. [History That Remains Active](docs/manifesto/05-HISTORY-THAT-REMAINS-ACTIVE.md)
 6. [Cosmology and Creation](docs/manifesto/06-COSMOLOGY-AND-CREATION.md)
 7. [Magic With Cost and Consequence](docs/manifesto/07-MAGIC-WITH-COST-AND-CONSEQUENCE.md)
+8. [Cultures, Kingdoms, and Institutions](docs/manifesto/08-CULTURES-KINGDOMS-AND-INSTITUTIONS.md)
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
