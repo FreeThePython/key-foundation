@@ -51,16 +51,16 @@ The manifesto is written as a living work. Each chapter should be read as both a
 11. [The Possibility Graph](11-THE-POSSIBILITY-GRAPH.md)  
     The Possibility Graph is the living network of futures supported by current world state. It connects pressure, character agency, knowledge, time, choice, and consequence without reducing story to predefined branches.
 
+12. [Choice and Consequence](12-CHOICE-AND-CONSEQUENCE.md)  
+    Choice becomes meaningful when reality changes because someone acted, refused, delayed, misunderstood, or sacrificed. Consequences must remain causal, persistent, multi-layered, and available to future memory rather than functioning as arbitrary reward or punishment.
+
 13. [Story Momentum](13-STORY-MOMENTUM.md)  
     Story Momentum is the changing dramatic and emotional energy created as pressures develop, intersect, transform, and resolve. The Story Director conducts timing, contrast, escalation, quiet, and Narrative Resonance without violating world truth or player agency.
-
-Chapter 12, **Choice and Consequence**, remains planned and will be added without renumbering Story Momentum.
 
 ## Planned Chapters
 
 ### Book III — The Story
 
-- Choice and Consequence
 - Revelation and Reinterpretation
 - Failure as Transformation
 - Resolution Without Predetermination
