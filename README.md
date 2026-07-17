@@ -49,12 +49,13 @@ The manifesto expands and operationalizes the Constitution. It defines what KEY 
 12. [Choice and Consequence](docs/manifesto/12-CHOICE-AND-CONSEQUENCE.md)
 13. [Story Momentum](docs/manifesto/13-STORY-MOMENTUM.md)
 14. [Revelation and Reinterpretation](docs/manifesto/14-REVELATION-AND-REINTERPRETATION.md)
+15. [Failure as Transformation](docs/manifesto/15-FAILURE-AS-TRANSFORMATION.md)
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
 ## Canonical Reference
 
-The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) defines the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, the Continuity Skeptic, and Canonical World State.
+The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) defines the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, the Continuity Skeptic, and Canonical World State.
 
 ## Cover Art
 
