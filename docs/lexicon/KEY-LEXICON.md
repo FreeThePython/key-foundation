@@ -148,6 +148,62 @@ Mystery begins with truth, not with a sequence of clues.
 
 ---
 
+## Discovery
+
+The acquisition of previously unknown information.
+
+Discovery expands knowledge by answering or reframing a question. It becomes revelation only when the discovered truth reorganizes the meaning of prior events, relationships, choices, or beliefs.
+
+---
+
+## Revelation
+
+The emergence of an existing truth that fundamentally changes interpretation without changing objective reality.
+
+An earned Revelation was always true, was discoverable through the world, and changes meaning when understood. Revelation exposes canon; it does not retroactively manufacture it.
+
+---
+
+## Reinterpretation
+
+The process by which existing events, choices, relationships, beliefs, and memories acquire new meaning after a Revelation.
+
+Reinterpretation changes understanding while preserving the truth and causality of what already occurred.
+
+---
+
+## Reinterpretation Wave
+
+The cascading effects of a Revelation as people, institutions, cultures, alliances, and systems revise their understanding and behavior.
+
+The reach of a Reinterpretation Wave depends on who learns the truth, how credible it appears, which beliefs it threatens, and the Revelation's Narrative Gravity.
+
+---
+
+## Revelation Debt
+
+The erosion of audience trust caused by unfair, unsupported, or retroactively invented twists.
+
+Revelation Debt accumulates when a story contradicts established truth, withholds all reasonable paths to discovery, or uses surprise as a substitute for causality. As the debt grows, observation and curiosity lose value because the audience no longer believes evidence matters.
+
+---
+
+## Interpretive Stability
+
+The principle that a Revelation may alter meaning but must preserve causality, canonical history, and the validity of prior choices.
+
+Interpretive Stability allows the past to be understood differently without pretending that different events occurred.
+
+---
+
+## Narrative Gravity
+
+A measure of how broadly and deeply a Revelation reshapes understanding across people, relationships, institutions, cultures, history, and future possibility.
+
+Low-gravity revelations may remain personal or local. High-gravity revelations can transform civilizations or alter how reality itself is understood.
+
+---
+
 ## Story Director
 
 The interpretive system that curates attention, timing, contrast, escalation, quiet, intersection, and presentation from valid world state and possibilities.
