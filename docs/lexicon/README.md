@@ -2,13 +2,14 @@
 
 The KEY Lexicon is the canonical vocabulary for the project.
 
-It exists so that the manifesto, architecture, prototype, evaluation system, agents, and future codebase use foundational terms consistently.
+It exists so that the manifesto, architecture, prototype, evaluation system, research program, agents, and future codebase use foundational terms consistently.
 
 ## Read the Lexicon
 
 - [The KEY Lexicon](KEY-LEXICON.md)
 - [Knowledge Boundary Terms](KNOWLEDGE-BOUNDARIES.md)
 - [Desire Terms](DESIRE.md)
+- [Narrative Observatory Terms](NARRATIVE-OBSERVATORY.md)
 
 ## Current Foundational Terms
 
@@ -50,6 +51,18 @@ It exists so that the manifesto, architecture, prototype, evaluation system, age
 - Desire Satisfaction
 - Desire Transformation
 - Motivational Causality
+- Narrative Observatory
+- Narrative Corpus
+- Narrative Case Study
+- Narrative Hypothesis
+- Comparative Narrative Set
+- Structural Observation
+- Reception Signal
+- Narrative Tradeoff
+- Script Dissection
+- Research Finding
+- Narrative Evidence
+- Interpretive Uncertainty
 - Consequence Memory
 - Realmprint
 - Narrative Intelligence
