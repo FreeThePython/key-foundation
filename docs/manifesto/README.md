@@ -66,11 +66,15 @@ The manifesto is written as a living work. Each chapter should be read as both a
 16. [Earned Resolution](16-EARNED-RESOLUTION.md)  
     Resolution emerges when accumulated truth, agency, consequence, irreversibility, and transformation cause the Possibility Graph to converge around futures the world has honestly earned. The Story Director recognizes and serves resolution without predetermining it.
 
+### Book IV — The People
+
+17. [Agency](17-AGENCY.md)  
+    Agency is meaningful authorship within real constraints. A person becomes believable when choices arise from identity, situated knowledge, desire, fear, relationships, perceived possibility, and an interior life that exists independently of the player.
+
 ## Planned Chapters
 
 ### Book IV — The People
 
-- Agency
 - Knowledge Boundaries
 - Desire
 - Fear
