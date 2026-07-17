@@ -300,6 +300,62 @@ The Open Future preserves consequences still unfolding, relationships still chan
 
 ---
 
+## Agency
+
+The capacity of a person or collective to form intentions and make situated choices that emerge from identity, knowledge, belief, desire, fear, memory, relationships, constraints, and perceived possibility.
+
+Agency is not unlimited freedom or guaranteed control over outcomes. It is meaningful authorship within real conditions, allowing a character to become a cause within the world.
+
+---
+
+## Situated Choice
+
+A choice made from an actor's actual perspective, available knowledge, beliefs, emotional state, relationships, constraints, and perceived options rather than from objective world truth or authorial convenience.
+
+A Situated Choice may be mistaken, self-defeating, or morally wrong while remaining intelligible from within the actor's lived understanding.
+
+---
+
+## Autonomous Intention
+
+A goal, commitment, need, or direction that belongs to a character independently of the player's immediate needs and the current scene.
+
+Autonomous Intention allows people to pursue futures that the player may support, obstruct, misunderstand, discover late, or never witness.
+
+---
+
+## Off-Screen Agency
+
+Meaningful action, decision, and transformation undertaken by a character outside direct player observation while remaining grounded in Canonical World State, Knowledge Boundaries, motivation, available capability, and time.
+
+Off-Screen Agency preserves the principle that observation changes knowledge but does not create existence.
+
+---
+
+## Agency Constraint
+
+A material, social, psychological, relational, informational, temporal, geographic, or institutional condition that limits which choices an actor can perceive, reach, or safely attempt.
+
+Agency Constraints shape action without necessarily erasing personhood. Constraint changes the form and reach of agency rather than automatically eliminating it.
+
+---
+
+## Meaningful Refusal
+
+A causally and psychologically supported rejection, withdrawal, boundary, or act of noncompliance that expresses a character's independent values, interests, loyalties, fears, judgment, or identity.
+
+Meaningful Refusal demonstrates that influence is not control and that relationship does not convert another person into an extension of the player.
+
+---
+
+## Collective Agency
+
+The capacity of a group, institution, culture, movement, or polity to produce situated action through leadership, procedures, incentives, norms, communication, internal conflict, legitimacy, and power.
+
+Collective Agency is not a single mind. It must preserve the differing people, factions, motives, and constraints operating within the collective.
+
+---
+
 ## Story Director
 
 The interpretive system that curates attention, timing, contrast, escalation, quiet, intersection, and presentation from valid world state and possibilities.
