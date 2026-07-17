@@ -22,6 +22,7 @@ The pilot corpus should:
 
 ### CASE-0001 — The Matrix (1999)
 
+**Status:** Initial pilot analysis complete.  
 **Research role:** acclaimed and commercially successful original film with enduring cultural influence.
 
 Primary questions:
@@ -31,29 +32,19 @@ Primary questions:
 - Why does the central revelation expand rather than collapse possibility?
 - How does a tightly authored story create the perception of meaningful choice?
 
-### CASE-0002 — Children of Men (2006)
+### CASE-0002 — The Last Airbender (2010)
 
-**Research role:** critically admired work whose initial commercial performance was comparatively limited.
-
-Primary questions:
-
-- How does world history remain active without extensive exposition?
-- How does reluctant agency become moral commitment?
-- How do background institutions create narrative pressure?
-- What is the relationship between bleakness, hope, and emotional investment?
-
-### CASE-0003 — Blade Runner (1982)
-
-**Research role:** initially polarizing and commercially disappointing work that gained major long-term stature.
+**Status:** Initial pilot analysis complete.  
+**Research role:** widely rejected adaptation of highly regarded source material.
 
 Primary questions:
 
-- How should the Observatory model changing reputation?
-- Can atmosphere, ambiguity, and thematic density compensate for weak conventional momentum?
-- How do alternate cuts change agency, identity, and interpretation?
-- What distinguishes productive ambiguity from missing causality?
+- What is lost when relational and developmental material is compressed?
+- How does adaptation fidelity differ from narrative effectiveness?
+- What happens when exposition replaces experienced causality?
+- How do knowledge, desire, relationship, and identity become disconnected?
 
-### CASE-0004 — Mad Max: Fury Road (2015)
+### CASE-0003 — Mad Max: Fury Road (2015)
 
 **Research role:** highly acclaimed action film with unusually strong visual causality and limited explanatory dialogue.
 
@@ -63,6 +54,17 @@ Primary questions:
 - How does supporting-character agency strengthen the world?
 - How does repetition become escalation rather than redundancy?
 - How does the story preserve clarity at sustained intensity?
+
+### CASE-0004 — Children of Men (2006)
+
+**Research role:** critically admired work whose initial commercial performance was comparatively limited.
+
+Primary questions:
+
+- How does world history remain active without extensive exposition?
+- How does reluctant agency become moral commitment?
+- How do background institutions create narrative pressure?
+- What is the relationship between bleakness, hope, and emotional investment?
 
 ### CASE-0005 — Jurassic World (2015)
 
@@ -75,16 +77,16 @@ Primary questions:
 - How should commercial success be recorded without treating it as proof of narrative quality?
 - What does audience enjoyment reveal that critical interpretation may miss?
 
-### CASE-0006 — The Last Airbender (2010)
+### CASE-0006 — Blade Runner (1982)
 
-**Research role:** widely rejected adaptation of highly regarded source material.
+**Research role:** initially polarizing and commercially disappointing work that gained major long-term stature.
 
 Primary questions:
 
-- What is lost when relational and developmental material is compressed?
-- How does adaptation fidelity differ from narrative effectiveness?
-- What happens when exposition replaces experienced causality?
-- How do knowledge, desire, relationship, and identity become disconnected?
+- How should the Observatory model changing reputation?
+- Can atmosphere, ambiguity, and thematic density compensate for weak conventional momentum?
+- How do alternate cuts change agency, identity, and interpretation?
+- What distinguishes productive ambiguity from missing causality?
 
 ## Comparison Structure
 
