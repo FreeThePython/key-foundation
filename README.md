@@ -2,7 +2,11 @@
 
 **KEY — We Unlock Worlds**
 
-This repository is the source of truth for the Constitution, manifesto, canonical language, architecture, and prototype definition of KEY: an AI narrative-world engine designed to create coherent worlds, believable people, meaningful choices, and persistent consequences.
+KEY is a Narrative Intelligence Framework for creating living worlds that naturally produce meaningful stories through truth, agency, and consequence.
+
+Rather than scripting stories, KEY models worlds, people, and causality so stories can emerge through interaction while remaining coherent, consequential, and earned.
+
+This repository is the source of truth for the Constitution, manifesto, canonical language, research program, architecture, and prototype definition of KEY.
 
 ## Start Here
 
@@ -10,16 +14,17 @@ This repository is the source of truth for the Constitution, manifesto, canonica
 2. [The KEY Manifesto](docs/manifesto/README.md)
 3. [The KEY Lexicon](docs/lexicon/README.md)
 4. [KEY Vision](docs/vision/KEY-VISION.md)
-5. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-6. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
-7. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-8. [Codex and Agent Instructions](AGENTS.md)
+5. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
+6. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+7. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
+8. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+9. [Codex and Agent Instructions](AGENTS.md)
 
 ## Foundational Order
 
 The [Constitution of KEY](CONSTITUTION.md) defines the principles that take precedence over every downstream document and implementation.
 
-The Manifesto explains those principles. The Lexicon gives them canonical language. The Architecture turns them into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
+The Manifesto explains those principles. The Lexicon gives them canonical language. The Narrative Observatory tests them against the history of storytelling. The Architecture turns them into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
 
 ## The KEY Manifesto
 
@@ -54,19 +59,27 @@ The manifesto expands and operationalizes the Constitution. It defines what KEY 
 
 Book III is complete. It defines how story emerges through pressure, possibility, agency, consequence, revelation, transformation, and resolution without reducing the world to a predetermined script.
 
-#### Book IV — The People
+#### Book IV — The Human Engine
 
 17. [Agency](docs/manifesto/17-AGENCY.md)
 18. [Knowledge Boundaries](docs/manifesto/18-KNOWLEDGE-BOUNDARIES.md)
 19. [Desire](docs/manifesto/19-DESIRE.md)
 
-Book IV establishes that people are situated agents rather than story functions. Their choices emerge from what they can perceive, remember, believe, imagine, and desire. Desire acts as a causal force by determining which possible future becomes meaningful enough to pursue.
+Book IV establishes that people are situated agents rather than story functions. Their choices emerge from what they can perceive, remember, believe, imagine, desire, and fear within the constraints and relationships of a living world.
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
+## The Narrative Observatory
+
+The [Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md) is KEY's research system for studying scripts, films, television, novels, games, myths, and other narrative forms.
+
+It examines how world coherence, character agency, knowledge, desire, fear, consequence, revelation, transformation, resolution, context, and reception interact. Its purpose is not to rank stories or optimize for popularity. Its purpose is to test KEY's assumptions, identify patterns and tradeoffs, and improve Narrative Intelligence through evidence.
+
+> The framework should learn from stories without becoming constrained by them.
+
 ## Canonical Reference
 
-The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) and its indexed extensions define the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, Agency, Situated Choice, Knowledge Boundary, Situated Knowledge, Desire, Core Desire, Desire Tension, Motivational Causality, the Continuity Skeptic, and Canonical World State.
+The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) and its indexed extensions define the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, Agency, Situated Choice, Knowledge Boundary, Situated Knowledge, Desire, Core Desire, Desire Tension, Motivational Causality, the Narrative Observatory, Narrative Hypothesis, Script Dissection, Reception Signal, the Continuity Skeptic, and Canonical World State.
 
 ## Cover Art
 
@@ -74,6 +87,8 @@ The manifesto cover is stored at:
 
 - `assets/key-manifesto-cover.jpg`
 
-## Core Principle
+## Core Principles
 
 > Story is not generated text. Story is a structured system of pressure, choice, consequence, memory, and change.
+
+> Structure protects meaning. Flexibility protects agency. Narrative Intelligence must preserve both.
