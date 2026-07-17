@@ -79,7 +79,7 @@ The manifesto is written as a living work. Each chapter should be read as both a
 
 ## Planned Chapters
 
-### Book IV — The People
+### Book IV — The Human Engine
 
 - Fear
 - Identity
@@ -89,6 +89,7 @@ The manifesto is written as a living work. Each chapter should be read as both a
 - Emotional Memory
 - Growth
 - Legacy
+- The Human Engine
 
 ### Book V — Narrative Intelligence
 
@@ -98,10 +99,11 @@ The manifesto is written as a living work. Each chapter should be read as both a
 - The Scene Composer
 - The Continuity Skeptic
 - The Consequence Engine
+- [The Narrative Observatory](../research/NARRATIVE-OBSERVATORY.md)
+- Narrative Evaluation
 - Canonization
 - Deterministic Validation
 - Model Independence
-- Narrative Evaluation
 
 ### Book VI — The Future
 
@@ -112,6 +114,12 @@ The manifesto is written as a living work. Each chapter should be read as both a
 - Living Intellectual Property
 - The Future of Narrative Intelligence
 
+## Research Program
+
+The [Narrative Observatory](../research/NARRATIVE-OBSERVATORY.md) studies scripts, films, television, novels, games, myths, and other narrative forms to test KEY's assumptions against evidence. It examines worlds, people, causality, consequence, revelation, transformation, resolution, reception, and context without reducing storytelling to popularity or formula.
+
+Its purpose is not to prove KEY correct. Its purpose is to help KEY become more accurate.
+
 ## Foundational Principle
 
 > The future of storytelling is not a story written for you. It is a world that knows what is true, remembers what you have done, and becomes a story through the choices you make.
@@ -121,6 +129,7 @@ The manifesto is written as a living work. Each chapter should be read as both a
 - [The Constitution of KEY](../../CONSTITUTION.md)
 - [The KEY Lexicon](../lexicon/README.md)
 - [KEY Vision](../vision/KEY-VISION.md)
+- [The Narrative Observatory](../research/NARRATIVE-OBSERVATORY.md)
 - [Prototype Definition](../product/PROTOTYPE-DEFINITION.md)
 - [World-State Constitution](../architecture/KEY-CONSTITUTION.md)
 - [Evaluation Framework](../evaluation/KEY-EVALUATION-FRAMEWORK.md)
