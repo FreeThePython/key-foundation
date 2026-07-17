@@ -8,6 +8,7 @@ It exists so that the manifesto, architecture, prototype, evaluation system, age
 
 - [The KEY Lexicon](KEY-LEXICON.md)
 - [Knowledge Boundary Terms](KNOWLEDGE-BOUNDARIES.md)
+- [Desire Terms](DESIRE.md)
 
 ## Current Foundational Terms
 
@@ -33,6 +34,22 @@ It exists so that the manifesto, architecture, prototype, evaluation system, age
 - Epistemic Conflict
 - Perceived Possibility
 - Epistemic State
+- Desire
+- Core Desire
+- Surface Goal
+- Desire Level
+- Immediate Desire
+- Relational Desire
+- Identity Desire
+- Existential Desire
+- Competing Desires
+- Desire Tension
+- Dominant Desire
+- Hidden Desire
+- Desire Hierarchy
+- Desire Satisfaction
+- Desire Transformation
+- Motivational Causality
 - Consequence Memory
 - Realmprint
 - Narrative Intelligence
