@@ -2,21 +2,28 @@
 
 **KEY — We Unlock Worlds**
 
-This repository is the source of truth for the vision, manifesto, narrative philosophy, architecture, and prototype definition of KEY: an AI narrative-world engine designed to create coherent worlds, believable characters, meaningful choices, and persistent consequences.
+This repository is the source of truth for the Constitution, manifesto, canonical language, architecture, and prototype definition of KEY: an AI narrative-world engine designed to create coherent worlds, believable people, meaningful choices, and persistent consequences.
 
 ## Start Here
 
-1. [The KEY Manifesto](docs/manifesto/README.md)
-2. [The KEY Lexicon](docs/lexicon/README.md)
-3. [KEY Vision](docs/vision/KEY-VISION.md)
-4. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-5. [KEY Constitution](docs/architecture/KEY-CONSTITUTION.md)
-6. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-7. [Codex and Agent Instructions](AGENTS.md)
+1. [The Constitution of KEY](CONSTITUTION.md)
+2. [The KEY Manifesto](docs/manifesto/README.md)
+3. [The KEY Lexicon](docs/lexicon/README.md)
+4. [KEY Vision](docs/vision/KEY-VISION.md)
+5. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+6. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
+7. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+8. [Codex and Agent Instructions](AGENTS.md)
+
+## Foundational Order
+
+The [Constitution of KEY](CONSTITUTION.md) defines the principles that take precedence over every downstream document and implementation.
+
+The Manifesto explains those principles. The Lexicon gives them canonical language. The Architecture turns them into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
 
 ## The KEY Manifesto
 
-The manifesto is the philosophical foundation of KEY. It defines what we believe about story, world-building, choice, consequence, mystery, character, and narrative intelligence before those beliefs become architecture and code.
+The manifesto expands and operationalizes the Constitution. It defines what KEY believes about story, world-building, choice, consequence, mystery, people, and narrative intelligence before those beliefs become architecture and code.
 
 ### Current Chapters
 
