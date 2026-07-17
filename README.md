@@ -14,18 +14,22 @@ This repository is the source of truth for the Constitution, manifesto, canonica
 2. [The KEY Manifesto](docs/manifesto/README.md)
 3. [The KEY Lexicon](docs/lexicon/README.md)
 4. [KEY Vision](docs/vision/KEY-VISION.md)
-5. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
-6. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
-7. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-8. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
-9. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-10. [Codex and Agent Instructions](AGENTS.md)
+5. [The KEY Research Agenda](docs/research/RESEARCH-AGENDA.md)
+6. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
+7. [Narrative Research Methodology](docs/research/METHODOLOGY.md)
+8. [Narrative Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md)
+9. [Narrative Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md)
+10. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
+11. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+12. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
+13. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+14. [Codex and Agent Instructions](AGENTS.md)
 
 ## Foundational Order
 
 The [Constitution of KEY](CONSTITUTION.md) defines the principles that take precedence over every downstream document and implementation.
 
-The Manifesto explains those principles. The Lexicon gives them canonical language. The Narrative Observatory tests them against the history of storytelling. The [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md) identifies the established fields KEY inherits and prevents the project from mistaking integration for invention. The Architecture turns principles into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
+The Manifesto explains those principles. The Lexicon gives them canonical language. The Research Agenda defines the questions KEY must answer. The Narrative Observatory studies evidence. The Methodology governs how that evidence is collected and interpreted. The Hypothesis Register prevents intuition from becoming doctrine. The [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md) identifies the established fields KEY inherits and prevents the project from mistaking integration for invention. The Architecture turns supported principles into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
 
 ## The KEY Manifesto
 
@@ -75,6 +79,8 @@ The full reading order and future structure are maintained in the [Manifesto Tab
 The [Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md) is KEY's research system for studying scripts, films, television, novels, games, myths, and other narrative forms.
 
 It examines how world coherence, character agency, knowledge, desire, fear, consequence, revelation, transformation, resolution, context, and reception interact. Its purpose is to test KEY's assumptions, identify patterns and tradeoffs, and improve Narrative Intelligence through evidence.
+
+The [Narrative Research Methodology](docs/research/METHODOLOGY.md) separates direct observation, craft interpretation, audience response, critical response, market context, and historical response. The [Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md) makes studies comparable. The [Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md) records evidence for and against KEY's claims.
 
 Reviews, audience response, commercial results, critical interpretation, exposure, and reputation over time are evidence layers rather than interchangeable definitions of quality.
 
