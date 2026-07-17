@@ -204,6 +204,54 @@ Low-gravity revelations may remain personal or local. High-gravity revelations c
 
 ---
 
+## Failure
+
+A causally supported outcome in which an intended objective is not achieved, producing persistent changes to people, relationships, institutions, world state, or future possibility.
+
+Failure is not punishment, discarded content, or an automatic reset. Meaningful Failure becomes part of canon and changes the future available to the world.
+
+---
+
+## Transformation
+
+An enduring change in identity, relationships, institutions, beliefs, capabilities, or world conditions that emerges through experience.
+
+Transformation may follow failure, loss, sacrifice, revelation, success, or sustained pressure. It need not be positive, but it must be causally and psychologically supported.
+
+---
+
+## Adaptive World
+
+A Living World that reorganizes around changed conditions rather than waiting for a preferred state to be restored.
+
+An Adaptive World responds to success and Failure through changes in behavior, relationships, policy, legitimacy, resources, belief, memory, and future possibility.
+
+---
+
+## Irreversible Event
+
+An event or consequence that cannot be undone without violating canonical truth, causal integrity, or the meaning of prior choices.
+
+An Irreversible Event becomes a permanent landmark in history. Future story emerges through adaptation to it rather than restoration of the world that existed before it.
+
+---
+
+## Productive Failure
+
+A Failure that generates useful understanding, capability, warning, resilience, or new possibility despite not achieving its original objective.
+
+Productive Failure does not erase loss. It preserves what the unsuccessful attempt taught the world and makes that knowledge available to future action.
+
+---
+
+## Cascading Failure
+
+A Failure whose effects propagate through interconnected people, relationships, institutions, systems, or generations.
+
+Each stage of a Cascading Failure must remain traceable through causal relationships in the Canonical World State rather than functioning as an arbitrary sequence of disasters.
+
+---
+
 ## Story Director
 
 The interpretive system that curates attention, timing, contrast, escalation, quiet, intersection, and presentation from valid world state and possibilities.
