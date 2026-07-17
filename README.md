@@ -57,14 +57,15 @@ Book III is complete. It defines how story emerges through pressure, possibility
 #### Book IV — The People
 
 17. [Agency](docs/manifesto/17-AGENCY.md)
+18. [Knowledge Boundaries](docs/manifesto/18-KNOWLEDGE-BOUNDARIES.md)
 
-Book IV begins with the premise that characters are not story functions. They are situated agents whose choices emerge from identity, knowledge, desire, fear, relationships, constraints, and perceived possibility.
+Book IV establishes that people are situated agents rather than story functions. Their choices emerge not from objective world truth, but from identity, desire, fear, relationships, constraints, and the partial reality they can perceive, remember, believe, and imagine.
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
 ## Canonical Reference
 
-The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) defines the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, Agency, Situated Choice, Autonomous Intention, Off-Screen Agency, the Continuity Skeptic, and Canonical World State.
+The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) and its indexed extensions define the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, Agency, Situated Choice, Knowledge Boundary, Situated Knowledge, Information Pathway, Epistemic Conflict, the Continuity Skeptic, and Canonical World State.
 
 ## Cover Art
 
