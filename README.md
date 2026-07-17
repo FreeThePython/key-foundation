@@ -54,11 +54,17 @@ The manifesto expands and operationalizes the Constitution. It defines what KEY 
 
 Book III is complete. It defines how story emerges through pressure, possibility, agency, consequence, revelation, transformation, and resolution without reducing the world to a predetermined script.
 
+#### Book IV — The People
+
+17. [Agency](docs/manifesto/17-AGENCY.md)
+
+Book IV begins with the premise that characters are not story functions. They are situated agents whose choices emerge from identity, knowledge, desire, fear, relationships, constraints, and perceived possibility.
+
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
 ## Canonical Reference
 
-The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) defines the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, the Continuity Skeptic, and Canonical World State.
+The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) defines the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, Agency, Situated Choice, Autonomous Intention, Off-Screen Agency, the Continuity Skeptic, and Canonical World State.
 
 ## Cover Art
 
