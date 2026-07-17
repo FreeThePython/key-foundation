@@ -4,19 +4,45 @@
 
 KEY is a persistent AI narrative-world engine.
 
-Its purpose is to generate causally coherent realities populated by characters with memory, limited knowledge, motivations, relationships, and agency. Human choices must produce persistent consequences and shape stories whose outcomes are not predetermined.
+Its purpose is to generate causally coherent realities populated by people with memory, limited knowledge, motivations, relationships, and agency. Human choices must produce persistent consequences and shape stories whose outcomes are not predetermined.
 
 **Brand promise:** KEY — We Unlock Worlds.
 
+## Constitutional Authority
+
+`CONSTITUTION.md` is the highest-level governing document in this repository.
+
+Architecture, product decisions, generated content, documentation, and code must remain consistent with it. A downstream document may clarify a constitutional principle. It may not silently contradict or supersede one.
+
 ## Required Reading
 
-Before making architectural or behavioral changes, read:
+Before making architectural, behavioral, narrative, or canonical changes, read:
 
-1. `docs/vision/KEY-VISION.md`
-2. `docs/product/PROTOTYPE-DEFINITION.md`
-3. `docs/architecture/KEY-CONSTITUTION.md`
-4. The architecture document relevant to the subsystem
-5. `docs/evaluation/KEY-EVALUATION-FRAMEWORK.md`
+1. `CONSTITUTION.md`
+2. `docs/lexicon/KEY-LEXICON.md`
+3. `docs/manifesto/README.md` and the chapters relevant to the change
+4. `docs/vision/KEY-VISION.md`
+5. `docs/product/PROTOTYPE-DEFINITION.md`
+6. `docs/architecture/KEY-CONSTITUTION.md`
+7. The architecture document relevant to the subsystem
+8. `docs/evaluation/KEY-EVALUATION-FRAMEWORK.md`
+
+## Required Creation and Canonization Workflow
+
+Substantial additions must follow this sequence:
+
+1. Read the Constitution, Lexicon, and related Manifesto chapters.
+2. Identify the governing principles and canonical terms.
+3. Propose the change without treating generated material as canon.
+4. Check for contradictions with existing truth, architecture, terminology, and scope.
+5. Run an independent continuity-skeptic review.
+6. Revise the proposal in response to valid challenges.
+7. Validate schemas, causal relationships, chronology, geography, and knowledge boundaries where applicable.
+8. Update all affected documentation and canonical definitions.
+9. Canonize only after review and validation succeed.
+10. Commit with a descriptive message that states what became canonical.
+
+Creation proposes. Review challenges. Canon requires both.
 
 ## Architectural Priorities
 
@@ -70,4 +96,4 @@ The current prototype proves the World and Story Engine. Unless explicitly reque
 
 ## Definition of Done
 
-A feature is complete only when behavior matches the product definition, canonical-state rules are preserved, invalid behavior is rejected safely, tests cover normal and adversarial cases, the result is inspectable, documentation is current, and no architectural contradiction has been introduced.
+A feature is complete only when behavior matches the Constitution and product definition, canonical-state rules are preserved, invalid behavior is rejected safely, tests cover normal and adversarial cases, the result is inspectable, documentation is current, and no constitutional, philosophical, or architectural contradiction has been introduced.
