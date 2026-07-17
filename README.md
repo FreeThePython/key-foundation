@@ -58,14 +58,15 @@ Book III is complete. It defines how story emerges through pressure, possibility
 
 17. [Agency](docs/manifesto/17-AGENCY.md)
 18. [Knowledge Boundaries](docs/manifesto/18-KNOWLEDGE-BOUNDARIES.md)
+19. [Desire](docs/manifesto/19-DESIRE.md)
 
-Book IV establishes that people are situated agents rather than story functions. Their choices emerge not from objective world truth, but from identity, desire, fear, relationships, constraints, and the partial reality they can perceive, remember, believe, and imagine.
+Book IV establishes that people are situated agents rather than story functions. Their choices emerge from what they can perceive, remember, believe, imagine, and desire. Desire acts as a causal force by determining which possible future becomes meaningful enough to pursue.
 
 The full reading order and future structure are maintained in the [Manifesto Table of Contents](docs/manifesto/README.md).
 
 ## Canonical Reference
 
-The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) and its indexed extensions define the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, Agency, Situated Choice, Knowledge Boundary, Situated Knowledge, Information Pathway, Epistemic Conflict, the Continuity Skeptic, and Canonical World State.
+The [KEY Lexicon](docs/lexicon/KEY-LEXICON.md) and its indexed extensions define the official meaning of foundational project terms, including Narrative Anchors, the Possibility Graph, Choice and Consequence, Consequence Memory, Story Momentum, Narrative Resonance, Revelation, Reinterpretation, Failure, Transformation, Earned Resolution, Narrative Convergence, Agency, Situated Choice, Knowledge Boundary, Situated Knowledge, Desire, Core Desire, Desire Tension, Motivational Causality, the Continuity Skeptic, and Canonical World State.
 
 ## Cover Art
 
