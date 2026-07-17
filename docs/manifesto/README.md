@@ -2,9 +2,9 @@
 
 ## We Unlock Worlds
 
-This manifesto is the philosophical foundation of KEY. It establishes the beliefs that guide the world engine, story engine, character systems, prototype, and every future expression of the platform.
+This manifesto expands, interprets, and operationalizes the [Constitution of KEY](../../CONSTITUTION.md). The Constitution defines the project's highest-order beliefs; the manifesto explores how those beliefs govern worlds, stories, people, narrative intelligence, and every future expression of the platform.
 
-The manifesto is written as a living work. Each chapter should be read as both a creative declaration and a design constraint.
+The manifesto is written as a living work. Each chapter should be read as both a creative declaration and a design constraint. No manifesto chapter may supersede the Constitution.
 
 ## Cover
 
@@ -65,22 +65,29 @@ The manifesto is written as a living work. Each chapter should be read as both a
 - Failure as Transformation
 - Resolution Without Predetermination
 
-### Book IV — The Characters
+### Book IV — The People
 
-- Character Agency
+- Agency
 - Knowledge Boundaries
-- Motivation and Moral Limits
-- Relationships and Loyalty
+- Desire
+- Fear
+- Identity
+- Relationships
+- Loyalty
+- Betrayal
 - Emotional Memory
-- Growth, Betrayal, and Legacy
+- Growth
+- Legacy
 
-### Book V — The Engine
+### Book V — Narrative Intelligence
 
 - Canonical World State
 - The World Architect
 - The Story Director
 - The Scene Composer
+- The Continuity Skeptic
 - The Consequence Engine
+- Canonization
 - Deterministic Validation
 - Model Independence
 - Narrative Evaluation
@@ -100,9 +107,10 @@ The manifesto is written as a living work. Each chapter should be read as both a
 
 ## Supporting Documents
 
+- [The Constitution of KEY](../../CONSTITUTION.md)
 - [The KEY Lexicon](../lexicon/README.md)
 - [KEY Vision](../vision/KEY-VISION.md)
 - [Prototype Definition](../product/PROTOTYPE-DEFINITION.md)
-- [KEY Constitution](../architecture/KEY-CONSTITUTION.md)
+- [World-State Constitution](../architecture/KEY-CONSTITUTION.md)
 - [Evaluation Framework](../evaluation/KEY-EVALUATION-FRAMEWORK.md)
 - [Repository Agent Instructions](../../AGENTS.md)
