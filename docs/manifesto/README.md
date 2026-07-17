@@ -71,11 +71,13 @@ The manifesto is written as a living work. Each chapter should be read as both a
 17. [Agency](17-AGENCY.md)  
     Agency is meaningful authorship within real constraints. A person becomes believable when choices arise from identity, situated knowledge, desire, fear, relationships, perceived possibility, and an interior life that exists independently of the player.
 
+18. [Knowledge Boundaries](18-KNOWLEDGE-BOUNDARIES.md)  
+    Truth belongs to the world, but knowledge belongs to people. Every person acts from a partial, situated understanding shaped by experience, memory, belief, trust, misinformation, and the causal pathways through which information travels.
+
 ## Planned Chapters
 
 ### Book IV — The People
 
-- Knowledge Boundaries
 - Desire
 - Fear
 - Identity
