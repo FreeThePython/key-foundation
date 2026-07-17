@@ -7,6 +7,7 @@ It exists so that the manifesto, architecture, prototype, evaluation system, age
 ## Read the Lexicon
 
 - [The KEY Lexicon](KEY-LEXICON.md)
+- [Knowledge Boundary Terms](KNOWLEDGE-BOUNDARIES.md)
 
 ## Current Foundational Terms
 
@@ -25,6 +26,13 @@ It exists so that the manifesto, architecture, prototype, evaluation system, age
 - World Architect
 - Continuity Skeptic
 - Knowledge Boundary
+- Situated Knowledge
+- Hidden Truth
+- Information Pathway
+- False Certainty
+- Epistemic Conflict
+- Perceived Possibility
+- Epistemic State
 - Consequence Memory
 - Realmprint
 - Narrative Intelligence
