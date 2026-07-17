@@ -46,28 +46,27 @@ The manifesto is written as a living work. Each chapter should be read as both a
 ### Book III — The Story
 
 10. [Narrative Anchors](10-NARRATIVE-ANCHORS.md)  
-     Narrative Anchors create direction without predetermination. They identify pressures that can no longer remain unchanged, allowing story to emerge from world truth, character agency, time, and consequence.
+    Narrative Anchors create direction without predetermination. They identify pressures that can no longer remain unchanged, allowing story to emerge from world truth, character agency, time, and consequence.
 
 11. [The Possibility Graph](11-THE-POSSIBILITY-GRAPH.md)  
-     The Possibility Graph is the living network of futures supported by current world state. It connects pressure, character agency, knowledge, time, choice, and consequence without reducing story to predefined branches.
+    The Possibility Graph is the living network of futures supported by current world state. It connects pressure, character agency, knowledge, time, choice, and consequence without reducing story to predefined branches.
 
 12. [Choice and Consequence](12-CHOICE-AND-CONSEQUENCE.md)  
-     Choice becomes meaningful when reality changes because someone acted, refused, delayed, misunderstood, or sacrificed. Consequences must remain causal, persistent, multi-layered, and available to future memory rather than functioning as arbitrary reward or punishment.
+    Choice becomes meaningful when reality changes because someone acted, refused, delayed, misunderstood, or sacrificed. Consequences must remain causal, persistent, multi-layered, and available to future memory rather than functioning as arbitrary reward or punishment.
 
 13. [Story Momentum](13-STORY-MOMENTUM.md)  
-     Story Momentum is the changing dramatic and emotional energy created as pressures develop, intersect, transform, and resolve. The Story Director conducts timing, contrast, escalation, quiet, and Narrative Resonance without violating world truth or player agency.
+    Story Momentum is the changing dramatic and emotional energy created as pressures develop, intersect, transform, and resolve. The Story Director conducts timing, contrast, escalation, quiet, and Narrative Resonance without violating world truth or player agency.
 
 14. [Revelation and Reinterpretation](14-REVELATION-AND-REINTERPRETATION.md)  
-     Revelation exposes truth that already existed and reorganizes understanding without rewriting reality. Earned revelations preserve causality, reward observation, trigger reinterpretation, and propagate through people, institutions, cultures, and future possibility.
+    Revelation exposes truth that already existed and reorganizes understanding without rewriting reality. Earned revelations preserve causality, reward observation, trigger reinterpretation, and propagate through people, institutions, cultures, and future possibility.
 
 15. [Failure as Transformation](15-FAILURE-AS-TRANSFORMATION.md)  
-     Failure is not a dead end or reset state. It changes people, institutions, relationships, and the Possibility Graph, creating a different future that preserves loss, consequence, adaptation, and meaning.
+    Failure is not a dead end or reset state. It changes people, institutions, relationships, and the Possibility Graph, creating a different future that preserves loss, consequence, adaptation, and meaning.
+
+16. [Earned Resolution](16-EARNED-RESOLUTION.md)  
+    Resolution emerges when accumulated truth, agency, consequence, irreversibility, and transformation cause the Possibility Graph to converge around futures the world has honestly earned. The Story Director recognizes and serves resolution without predetermining it.
 
 ## Planned Chapters
-
-### Book III — The Story
-
-- Resolution Without Predetermination
 
 ### Book IV — The People
 
