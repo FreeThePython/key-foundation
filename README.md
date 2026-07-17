@@ -15,16 +15,17 @@ This repository is the source of truth for the Constitution, manifesto, canonica
 3. [The KEY Lexicon](docs/lexicon/README.md)
 4. [KEY Vision](docs/vision/KEY-VISION.md)
 5. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
-6. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-7. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
-8. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-9. [Codex and Agent Instructions](AGENTS.md)
+6. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
+7. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+8. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
+9. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+10. [Codex and Agent Instructions](AGENTS.md)
 
 ## Foundational Order
 
 The [Constitution of KEY](CONSTITUTION.md) defines the principles that take precedence over every downstream document and implementation.
 
-The Manifesto explains those principles. The Lexicon gives them canonical language. The Narrative Observatory tests them against the history of storytelling. The Architecture turns them into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
+The Manifesto explains those principles. The Lexicon gives them canonical language. The Narrative Observatory tests them against the history of storytelling. The [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md) identifies the established fields KEY inherits and prevents the project from mistaking integration for invention. The Architecture turns principles into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
 
 ## The KEY Manifesto
 
@@ -73,9 +74,19 @@ The full reading order and future structure are maintained in the [Manifesto Tab
 
 The [Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md) is KEY's research system for studying scripts, films, television, novels, games, myths, and other narrative forms.
 
-It examines how world coherence, character agency, knowledge, desire, fear, consequence, revelation, transformation, resolution, context, and reception interact. Its purpose is not to rank stories or optimize for popularity. Its purpose is to test KEY's assumptions, identify patterns and tradeoffs, and improve Narrative Intelligence through evidence.
+It examines how world coherence, character agency, knowledge, desire, fear, consequence, revelation, transformation, resolution, context, and reception interact. Its purpose is to test KEY's assumptions, identify patterns and tradeoffs, and improve Narrative Intelligence through evidence.
+
+Reviews, audience response, commercial results, critical interpretation, exposure, and reputation over time are evidence layers rather than interchangeable definitions of quality.
 
 > The framework should learn from stories without becoming constrained by them.
+
+## Research Continuity
+
+KEY builds upon established work in narratology, computational narratology, interactive drama, drama management, narrative planning, emergent narrative, autonomous agents, automatic story generation, and narrative evaluation.
+
+The proposed contribution is not any isolated component. It is the integration of persistent world truth, autonomous human modeling, adaptive story direction, consequence memory, and empirical narrative research into one coherent framework.
+
+> KEY is not the invention of Narrative Intelligence. It is an attempt to integrate its fragmented foundations into a coherent, testable, and adaptive system.
 
 ## Canonical Reference
 
