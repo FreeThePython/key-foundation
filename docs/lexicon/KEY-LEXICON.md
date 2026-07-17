@@ -252,6 +252,54 @@ Each stage of a Cascading Failure must remain traceable through causal relations
 
 ---
 
+## Earned Resolution
+
+A stable and meaningful world state that emerges from accumulated truth, agency, choice, consequence, revelation, failure, irreversibility, and transformation rather than from a predetermined ending.
+
+An Earned Resolution closes or transforms enough central Narrative Anchors to create genuine closure while preserving the continued life and future possibility of the world.
+
+---
+
+## Narrative Convergence
+
+The process by which accumulated causality and irreversible change reshape the Possibility Graph until a smaller set of futures can honestly carry the meaning of what the world has become.
+
+Narrative Convergence is not scripting or the elimination of agency. It is the emergence of coherence as unsupported futures disappear and earned Resolution Candidates gain Narrative Gravity.
+
+---
+
+## Resolution Candidate
+
+A causally and dramatically supported future world state capable of resolving or transforming enough central pressures to create meaningful closure.
+
+A Resolution Candidate is not a selected ending. It may strengthen, weaken, merge, transform, or disappear as Canonical World State continues to change.
+
+---
+
+## Narrative Equilibrium
+
+A temporary state in which the dominant pressures of a story no longer demand immediate transformation in their previous form, allowing the meaning of accumulated change to settle.
+
+Narrative Equilibrium does not require perfect peace or the absence of conflict. It creates closure while leaving the world alive and capable of future change.
+
+---
+
+## Historical Legacy
+
+The enduring causal, cultural, institutional, relational, and emotional inheritance created by a story's resolution.
+
+Historical Legacy records not only what the world became, but why it became that way, who shaped the outcome, who paid for it, how it is remembered, and which future pressures it creates.
+
+---
+
+## Open Future
+
+The set of causally supported possibilities that remain after an Earned Resolution.
+
+The Open Future preserves consequences still unfolding, relationships still changing, institutions still adapting, and new Narrative Anchors emerging from the world created by the completed story.
+
+---
+
 ## Story Director
 
 The interpretive system that curates attention, timing, contrast, escalation, quiet, intersection, and presentation from valid world state and possibilities.
