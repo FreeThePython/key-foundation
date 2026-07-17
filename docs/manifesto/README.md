@@ -57,11 +57,13 @@ The manifesto is written as a living work. Each chapter should be read as both a
 13. [Story Momentum](13-STORY-MOMENTUM.md)  
     Story Momentum is the changing dramatic and emotional energy created as pressures develop, intersect, transform, and resolve. The Story Director conducts timing, contrast, escalation, quiet, and Narrative Resonance without violating world truth or player agency.
 
+14. [Revelation and Reinterpretation](14-REVELATION-AND-REINTERPRETATION.md)  
+    Revelation exposes truth that already existed and reorganizes understanding without rewriting reality. Earned revelations preserve causality, reward observation, trigger reinterpretation, and propagate through people, institutions, cultures, and future possibility.
+
 ## Planned Chapters
 
 ### Book III — The Story
 
-- Revelation and Reinterpretation
 - Failure as Transformation
 - Resolution Without Predetermination
 
