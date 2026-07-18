@@ -6,7 +6,7 @@ KEY is a Narrative Intelligence Framework for creating living worlds that natura
 
 Rather than scripting stories, KEY models worlds, people, and causality so stories can emerge through interaction while remaining coherent, consequential, and earned.
 
-This repository is the source of truth for the Constitution, manifesto, canonical language, research program, architecture, and prototype definition of KEY.
+This repository is the source of truth for the Constitution, manifesto, canonical language, research program, formal ontology, narrative physics, architecture, and prototype definition of KEY.
 
 ## Start Here
 
@@ -14,22 +14,53 @@ This repository is the source of truth for the Constitution, manifesto, canonica
 2. [The KEY Manifesto](docs/manifesto/README.md)
 3. [The KEY Lexicon](docs/lexicon/README.md)
 4. [KEY Vision](docs/vision/KEY-VISION.md)
-5. [The KEY Research Agenda](docs/research/RESEARCH-AGENDA.md)
-6. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
-7. [Narrative Research Methodology](docs/research/METHODOLOGY.md)
-8. [Narrative Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md)
-9. [Narrative Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md)
-10. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
-11. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-12. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
-13. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-14. [Codex and Agent Instructions](AGENTS.md)
+5. [Narrative Ontology](docs/foundation/NARRATIVE-ONTOLOGY.md)
+6. [Narrative Physics](docs/foundation/NARRATIVE-PHYSICS.md)
+7. [The KEY Research Agenda](docs/research/RESEARCH-AGENDA.md)
+8. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
+9. [Narrative Research Methodology](docs/research/METHODOLOGY.md)
+10. [Narrative Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md)
+11. [Narrative Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md)
+12. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
+13. [World Engine Specification](docs/engines/WORLD-ENGINE.md)
+14. [Human Engine Specification](docs/engines/HUMAN-ENGINE.md)
+15. [Story Engine Specification](docs/engines/STORY-ENGINE.md)
+16. [Memory Engine Specification](docs/engines/MEMORY-ENGINE.md)
+17. [Evaluation Engine Specification](docs/engines/EVALUATION-ENGINE.md)
+18. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+19. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
+20. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+21. [Living Roadmap](ROADMAP.md)
+22. [Scientific Changelog](CHANGELOG.md)
+23. [Codex and Agent Instructions](AGENTS.md)
 
 ## Foundational Order
 
 The [Constitution of KEY](CONSTITUTION.md) defines the principles that take precedence over every downstream document and implementation.
 
-The Manifesto explains those principles. The Lexicon gives them canonical language. The Research Agenda defines the questions KEY must answer. The Narrative Observatory studies evidence. The Methodology governs how that evidence is collected and interpreted. The Hypothesis Register prevents intuition from becoming doctrine. The [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md) identifies the established fields KEY inherits and prevents the project from mistaking integration for invention. The Architecture turns supported principles into systems. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
+The Manifesto explains those principles. The Lexicon gives them canonical language. The Narrative Ontology defines what the system must represent. Narrative Physics records provisional relationships among state, agency, pressure, knowledge, consequence, and possibility. The Research Agenda defines the questions KEY must answer. The Narrative Observatory studies evidence. The Methodology governs how that evidence is collected and interpreted. The Hypothesis Register prevents intuition from becoming doctrine. The [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md) identifies the established fields KEY inherits and prevents the project from mistaking integration for invention. Research-derived engine specifications translate supported findings into requirements. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
+
+## Formal Foundation
+
+The [Narrative Ontology](docs/foundation/NARRATIVE-ONTOLOGY.md) defines agents, institutions, relationships, locations, resources, artifacts, events, knowledge, beliefs, memories, desires, fears, commitments, rules, constraints, pressure, truth, mystery, consequence, and possibility as state-bearing narrative objects.
+
+The [Narrative Physics](docs/foundation/NARRATIVE-PHYSICS.md) records provisional laws including consequence persistence, situated knowledge, relationship memory, pressure through constraint, transformative failure, institutional agency, visible world operation, state-based momentum, hope through possibility, and selective closure.
+
+These documents are not doctrines. Their claims remain downstream of Observatory evidence and may be narrowed, revised, rejected, or retired.
+
+> Stories are not sequences of events. They are evolving systems of state.
+
+## Research-Derived Engine Specifications
+
+The first engine specifications establish traceability from observation to architecture:
+
+- [World Engine](docs/engines/WORLD-ENGINE.md) — canonical state, active history, institutions, resources, rules, and independent world progression
+- [Human Engine](docs/engines/HUMAN-ENGINE.md) — situated knowledge, motivation, identity, perceived possibility, and relationship memory
+- [Story Engine](docs/engines/STORY-ENGINE.md) — pressure, consequence, revelation, failure, transformation, momentum, and selective closure
+- [Memory Engine](docs/engines/MEMORY-ENGINE.md) — event provenance, consequence chains, contested memory, and historical continuity
+- [Evaluation Engine](docs/engines/EVALUATION-ENGINE.md) — causal traceability, knowledge boundaries, relationship continuity, consequence checks, and uncertainty
+
+Every research-derived requirement records its evidence, related hypotheses, and current confidence.
 
 ## The KEY Manifesto
 
