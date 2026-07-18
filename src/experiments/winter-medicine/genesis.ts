@@ -140,7 +140,7 @@ export const WINTER_MEDICINE_GENESIS_EVENT: Event = {
   worldId: WINTER_MEDICINE_WORLD_ID,
   kind: "system",
   occurredAt: WINTER_MEDICINE_GENESIS_TIME,
-  locationId: WINTER_MEDICINE_ENTITIES.cabin.id as Event["locationId"],
+  locationId: "location:cabin" as Event["locationId"],
   participants: [
     { entityId: WINTER_MEDICINE_ENTITIES.player.id, role: "witness" },
     { entityId: WINTER_MEDICINE_ENTITIES.mara.id, role: "actor" },
