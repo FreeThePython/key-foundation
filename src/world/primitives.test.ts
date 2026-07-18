@@ -12,9 +12,13 @@ import {
   type CanonicalMutation,
   type Entity,
   type Memory,
+  type WorldTimestamp,
 } from "./primitives";
 
-const timestamp = { instant: "2041-01-01T00:00:00.000Z", tick: 1 } as const;
+const timestamp: WorldTimestamp = {
+  instant: "2041-01-01T00:00:00.000Z" as WorldTimestamp["instant"],
+  tick: 1,
+};
 const provenance = {
   createdBy: "research_fixture" as const,
   sourceEventIds: [],
