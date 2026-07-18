@@ -2,121 +2,175 @@
 
 ## Prototype Mission
 
-The first prototype must prove one central hypothesis:
+The prototype exists to reduce uncertainty about KEY through small, controlled, measurable experiments.
 
-> KEY can generate a coherent original world, populate it with believable characters, introduce structured narrative pressures, and transform player choices into a compelling story that remains logically consistent.
+> The prototype is not a miniature version of the final product. It is a laboratory for testing the smallest useful behaviors that KEY must eventually perform.
 
-This is not yet a conventional video game. It is a browser-based narrative simulation and internal world inspector designed to validate the World and Story Engine.
+The long-term vision includes living worlds, adaptive narratives, game systems, player experience, and interface intelligence. The first prototype does not attempt to build that complete vision.
 
-## What the Prototype Must Prove
+## Governing Rule
 
-### 1. Coherent World Generation
+> Scope expands only when the current layer demonstrates coherent, observable, and repeatable behavior.
 
-The system generates a fantasy world whose cosmology, history, magic, factions, cultures, artifacts, and current conflicts are causally connected.
+Implementation completion is not proof. Each layer must produce evidence before the next layer is added.
 
-### 2. Persistent Canonical State
+## Current Experimental Boundary
 
-The system maintains an objective record of what is true, including who is alive, who controls territory, where artifacts are located, what events occurred, what each character knows, and which consequences remain pending.
+The first prototype program tests whether KEY can:
 
-### 3. Believable Characters
+1. maintain canonical world state
+2. preserve distinct knowledge boundaries
+3. represent desire, fear, belief, memory, and relationship state
+4. allow agents to act from situated causes
+5. make promises and resource decisions persist
+6. produce understandable delayed consequences
+7. create meaningful divergence without predetermined endings
+8. expose causal provenance for inspection
 
-Important characters have motivations, values, fears, loyalties, relationships, secrets, knowledge boundaries, and emotional memory.
+The initial experimental environment is intentionally small:
 
-### 4. Narrative Structure Without Predetermined Endings
+- one room
+- three agents
+- one disputed resource
+- one relevant past event
+- one immediate conflict
+- one hour of simulated time
 
-The engine uses fixed truths, Narrative Anchors, fluid story threads, and a possibility graph to create momentum while preserving real choice.
+The detailed sequence is defined in [Prototype Blueprint v1](PROTOTYPE-BLUEPRINT-V1.md). The first experiment is [EXPERIMENT-0001 — The Room](experiments/EXPERIMENT-0001-THE-ROOM.md).
 
-### 5. Meaningful Choice
+## What the First Module Must Prove
 
-Major choices alter persistent state or future possibilities. Cosmetic choices are minimized.
+### Persistent Canonical State
 
-### 6. Narrative Memory
+The system maintains an objective record of relevant facts, events, resource ownership, promises, relationships, knowledge, and pending consequences.
 
-Promises, betrayals, sacrifices, humiliations, acts of mercy, and personal relationships can return later as consequences or callbacks.
+### Situated Knowledge
 
-### 7. Earned Resolution
+Agents act only from information they possess or reasonably infer. Canonical truth, belief, and memory remain distinct.
 
-A campaign reaches a climax and ending that grow from the campaign state rather than from a fixed script or arbitrary cutoff.
+### Traceable Character Agency
 
-## Initial Campaign Scope
+Agent actions can be explained through knowledge, belief, desire, fear, relationship, obligation, memory, resource, identity, and constraint.
 
-A prototype campaign should target:
+### Consequence Persistence
 
-- 90 minutes to 3 hours
-- Approximately 20 to 30 major scenes
-- Three acts
-- One player-controlled kingdom
-- Three neighboring kingdoms
-- Two non-state factions
-- One generated cosmology
-- One generated magic system
-- Approximately 300 years of summarized history
-- Three major historical events
-- Three Narrative Anchors
-- One central mystery
-- Approximately 18 persistent named characters
-- Several organically determined resolution paths
+An earlier player action changes a later state, behavior, or available possibility in a way the player can understand.
 
-## Required Player Experience
+### Relationship Memory
 
-The player should be able to:
+Promises, deception, support, withholding, betrayal, and resource decisions can alter directional relationships and future action.
 
-1. Select broad tone and story preferences.
-2. Generate a new world.
-3. Inspect its known history, cosmology, magic, factions, and characters.
-4. Begin as the ruler of one kingdom.
-5. Experience court, diplomatic, heroic, dynastic, and supernatural situations.
-6. Make structured choices or provide freeform responses.
-7. See relationships, knowledge, politics, and future possibilities change.
-8. Reach an earned climax.
-9. Read a Chronicle of the reign.
-10. Save the world as a Realmprint.
+### Divergence Without Separate Scripts
 
-## Initial Interface
+Different player choices produce meaningfully different later states using the same underlying rules.
 
-The prototype may use a simple web interface with these views:
+## First Player Actions
 
-- **Throne:** current scene, dialogue, choices, and freeform response
-- **Realm:** kingdoms, regions, relationships, and known crises
-- **Court:** important characters and known relationship context
-- **World:** discovered lore, cosmology, magic, history, and artifacts
-- **Threads:** active issues in player-friendly language
-- **Chronicle:** the evolving history of the campaign
-- **Inspector:** internal developer view of hidden truth and system state
+The initial interface may permit only:
 
-## Non-Goals for the First Prototype
+- ask
+- speak
+- reveal
+- withhold
+- promise
+- lie
+- give
+- take
+- support
+- leave
+- advance time
 
-The first prototype does not need:
+The interface should remain simple enough that interaction design does not obscure the systems being tested.
 
+## Required Internal Inspector
+
+The prototype must expose:
+
+- canonical facts
+- each agent's knowledge and beliefs
+- goals, desires, fears, and constraints
+- directional relationship state
+- memories and promises
+- resource ownership
+- candidate actions
+- selected actions and causal rationale
+- state before and after each event
+- possibilities opened or closed
+
+## Non-Goals for the First Modules
+
+The first experimental modules do not require:
+
+- generated kingdoms
+- cosmology generation
+- magic systems
+- centuries of history
+- large casts
+- three-act campaigns
 - 3D environments
-- Real-time combat
-- Large-scale economic simulation
-- Crafting or inventory systems
-- Open-world traversal
-- Multiplayer
-- Dynamic video generation
-- Fully voiced dialogue
-- Hundreds of autonomous NPCs
-- Blockchain or marketplace functionality
-- A mobile application
+- real-time combat
+- economic simulation
+- crafting or inventory systems
+- open-world traversal
+- multiplayer
+- dynamic video generation
+- fully voiced dialogue
+- adaptive genre
+- fully dynamic interface generation
+- finished-game polish
 
-These may become future expressions of KEY but are not necessary to prove the foundation.
+These remain possible future expressions of KEY but would prevent the first experiments from isolating causal behavior.
 
 ## Success Criteria
 
-The prototype is successful when:
+The first module succeeds when:
 
-1. Ten generated worlds are internally coherent and noticeably different.
-2. Important characters remain psychologically consistent.
-3. Characters do not reveal information they do not possess.
-4. Player choices create persistent, understandable consequences.
-5. Two campaigns from the same Realmprint diverge meaningfully.
-6. Early events return later in relevant ways.
-7. The story reaches a satisfying climax.
-8. The Chronicle accurately reflects the campaign.
-9. Players become attached to specific characters.
-10. Players voluntarily recount or share what happened.
+1. Players can identify how an earlier choice caused a later consequence.
+2. Agents remain inside their knowledge boundaries.
+3. Agent decisions can be traced to modeled causes.
+4. Promises, relationships, and resources persist across time advancement.
+5. At least two choices create different later states or available actions.
+6. Outcomes do not require separate predetermined narrative sequences.
+7. Players describe the later state as caused rather than random.
+8. Automated and human evaluation reveal where perception and internal causality disagree.
 
-The ultimate measure is not how much content KEY generates.
+## Failure Criteria
 
-It is whether KEY creates a world the player cares about.
+The module fails when:
+
+- choices change text but not meaningful state
+- agents reveal inaccessible information
+- behavior appears random or plot-forced
+- recorded state fails to affect later behavior
+- causal explanations are post hoc rather than generated from the model
+- the experiment becomes too complex to identify why it succeeded or failed
+
+## Future Integrated Prototype
+
+A later integrated prototype may return to the broader fantasy-kingdom concept: a ruler, neighboring powers, heroes, institutions, cosmology, political pressures, and an earned campaign history.
+
+That experience is a destination for accumulated validated modules, not the starting experiment.
+
+It should be attempted only after KEY demonstrates reliable behavior at the levels of:
+
+```text
+One interaction
+    ↓
+One relationship network
+    ↓
+One local conflict
+    ↓
+One settlement
+    ↓
+One institution
+    ↓
+One region
+    ↓
+One world
+```
+
+## Ultimate Measure
+
+The measure is not how much content KEY can generate.
+
+It is whether the system can produce coherent, understandable, consequential behavior that players experience as the beginning of a living world.
