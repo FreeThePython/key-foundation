@@ -34,8 +34,11 @@ for (const file of testFiles) {
   console.log(`  ${relative(repositoryRoot, file)}`);
 }
 
-const executable = process.platform === "win32" ? "tsx.cmd" : "tsx";
-const child = spawn(executable, ["--test", ...testFiles], {
+// Invoke the tsx CLI through the current Node executable rather than spawning
+// tsx.cmd directly. This avoids EINVAL on Windows and behaves consistently
+// across shells and supported Node versions.
+const tsxCli = join(repositoryRoot, "node_modules", "tsx", "dist", "cli.mjs");
+const child = spawn(process.execPath, [tsxCli, "--test", ...testFiles], {
   cwd: repositoryRoot,
   stdio: "inherit",
   shell: false,
