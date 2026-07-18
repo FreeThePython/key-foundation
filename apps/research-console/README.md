@@ -2,6 +2,23 @@
 
 The browser-based research surface for EXPERIMENT-0001: The Winter Medicine.
 
+## Fastest Windows start
+
+1. Install Node.js LTS.
+2. Clone the repository with GitHub Desktop.
+3. Open `apps\research-console`.
+4. Double-click `START-KEY.cmd`.
+
+The launcher will:
+
+- verify Node.js and npm
+- install dependencies on the first run
+- run automated validation tests
+- open the browser
+- start the local console
+
+See [TESTING-GUIDE-WINDOWS.md](./TESTING-GUIDE-WINDOWS.md) for the complete step-by-step procedure and validation protocol.
+
 ## Purpose
 
 The console separates two views of the same deterministic simulation:
@@ -11,21 +28,18 @@ The console separates two views of the same deterministic simulation:
 
 The current build intentionally uses structured actions and deterministic state transitions. Natural-language mediation and model-generated dialogue come later, after the simulation layer is trustworthy.
 
-## Run locally
+## Manual start
 
 ```bash
 cd apps/research-console
 npm install
+npm test
 npm run dev
 ```
 
 Open `http://localhost:3000`.
 
-## Test
-
-```bash
-npm test
-```
+Stop the server with `Ctrl+C`.
 
 ## Current capabilities
 
