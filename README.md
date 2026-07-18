@@ -2,11 +2,11 @@
 
 **KEY — We Unlock Worlds**
 
-KEY is a Narrative Intelligence Framework for creating living worlds that naturally produce meaningful stories through truth, agency, and consequence.
+KEY is a World and Experience Intelligence framework for creating living, playable worlds whose stories, systems, characters, mechanics, and forms of play can develop through interaction.
 
-Rather than scripting stories, KEY models worlds, people, and causality so stories can emerge through interaction while remaining coherent, consequential, and earned.
+Narrative Intelligence is one foundational subsystem. KEY's broader purpose is to coordinate world state, human agency, narrative, gameplay, player experience, and interface through time while preserving coherence, consequence, and meaningful possibility.
 
-This repository is the source of truth for the Constitution, manifesto, canonical language, research program, formal ontology, narrative physics, architecture, and prototype definition of KEY.
+This repository is the source of truth for the Constitution, manifesto, canonical language, North Star vision, research program, formal ontology, narrative physics, architecture, engineering principles, and experimental prototype program of KEY.
 
 ## Start Here
 
@@ -14,31 +14,70 @@ This repository is the source of truth for the Constitution, manifesto, canonica
 2. [The KEY Manifesto](docs/manifesto/README.md)
 3. [The KEY Lexicon](docs/lexicon/README.md)
 4. [KEY Vision](docs/vision/KEY-VISION.md)
-5. [Narrative Ontology](docs/foundation/NARRATIVE-ONTOLOGY.md)
-6. [Narrative Physics](docs/foundation/NARRATIVE-PHYSICS.md)
-7. [The KEY Research Agenda](docs/research/RESEARCH-AGENDA.md)
-8. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
-9. [Narrative Research Methodology](docs/research/METHODOLOGY.md)
-10. [Narrative Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md)
-11. [Narrative Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md)
-12. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
-13. [World Engine Specification](docs/engines/WORLD-ENGINE.md)
-14. [Human Engine Specification](docs/engines/HUMAN-ENGINE.md)
-15. [Story Engine Specification](docs/engines/STORY-ENGINE.md)
-16. [Memory Engine Specification](docs/engines/MEMORY-ENGINE.md)
-17. [Evaluation Engine Specification](docs/engines/EVALUATION-ENGINE.md)
-18. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-19. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
-20. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-21. [Living Roadmap](ROADMAP.md)
-22. [Scientific Changelog](CHANGELOG.md)
-23. [Codex and Agent Instructions](AGENTS.md)
+5. [KEY World and Experience Intelligence](docs/vision/KEY-WORLD-AND-EXPERIENCE-INTELLIGENCE.md)
+6. [KEY Engineering Principles](docs/engineering/KEY-ENGINEERING-PRINCIPLES.md)
+7. [Narrative Ontology](docs/foundation/NARRATIVE-ONTOLOGY.md)
+8. [Narrative Physics](docs/foundation/NARRATIVE-PHYSICS.md)
+9. [The KEY Research Agenda](docs/research/RESEARCH-AGENDA.md)
+10. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
+11. [Narrative Research Methodology](docs/research/METHODOLOGY.md)
+12. [Narrative Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md)
+13. [Narrative Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md)
+14. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
+15. [World Engine Specification](docs/engines/WORLD-ENGINE.md)
+16. [Human Engine Specification](docs/engines/HUMAN-ENGINE.md)
+17. [Story Engine Specification](docs/engines/STORY-ENGINE.md)
+18. [Memory Engine Specification](docs/engines/MEMORY-ENGINE.md)
+19. [Evaluation Engine Specification](docs/engines/EVALUATION-ENGINE.md)
+20. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+21. [Prototype Blueprint v1](docs/product/PROTOTYPE-BLUEPRINT-V1.md)
+22. [EXPERIMENT-0001 — The Room](docs/product/experiments/EXPERIMENT-0001-THE-ROOM.md)
+23. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
+24. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+25. [Living Roadmap](ROADMAP.md)
+26. [Scientific Changelog](CHANGELOG.md)
+27. [Codex and Agent Instructions](AGENTS.md)
 
 ## Foundational Order
 
 The [Constitution of KEY](CONSTITUTION.md) defines the principles that take precedence over every downstream document and implementation.
 
-The Manifesto explains those principles. The Lexicon gives them canonical language. The Narrative Ontology defines what the system must represent. Narrative Physics records provisional relationships among state, agency, pressure, knowledge, consequence, and possibility. The Research Agenda defines the questions KEY must answer. The Narrative Observatory studies evidence. The Methodology governs how that evidence is collected and interpreted. The Hypothesis Register prevents intuition from becoming doctrine. The [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md) identifies the established fields KEY inherits and prevents the project from mistaking integration for invention. Research-derived engine specifications translate supported findings into requirements. The Prototype proves a bounded form of those systems. Code remains a replaceable implementation of an enduring purpose.
+The Manifesto explains those principles. The Lexicon gives them canonical language. The North Star vision protects the full destination. Engineering Principles govern how the project learns. The Narrative Ontology defines what the first formal systems must represent. Narrative Physics records provisional relationships among state, agency, pressure, knowledge, consequence, and possibility. Research tests those assumptions. Engine specifications translate supported findings into requirements. The prototype program tests one bounded behavior at a time. Code remains a replaceable implementation of an enduring purpose.
+
+## The Full Vision and the First Experiment
+
+[KEY World and Experience Intelligence](docs/vision/KEY-WORLD-AND-EXPERIENCE-INTELLIGENCE.md) defines the long-term direction:
+
+> KEY is an intelligence architecture for playable possibility.
+
+The eventual system may coordinate:
+
+- World Intelligence
+- Human Intelligence
+- Narrative Intelligence
+- Game Intelligence
+- Experience Intelligence
+- Interface Intelligence
+
+The first prototype deliberately does not attempt to build that entire system.
+
+> The prototype is not a miniature version of the final product. It is a laboratory for testing the smallest useful behaviors that KEY must eventually perform.
+
+The current prototype begins with one room, three agents, one disputed resource, one conflict, and one hour of simulated time. It tests persistent consequence, situated knowledge, character agency, relationship memory, and causal legibility before scope expands.
+
+## Engineering Doctrine
+
+The [KEY Engineering Principles](docs/engineering/KEY-ENGINEERING-PRINCIPLES.md) establish the development discipline:
+
+- every feature tests a claim
+- the smallest valid experiment comes first
+- simulation before scripting
+- persistent state before procedural content
+- every consequence needs provenance
+- one primary variable per experiment
+- systems must compose
+- human perception is part of validation
+- scope expands only after evidence
 
 ## Formal Foundation
 
@@ -107,9 +146,11 @@ The full reading order and future structure are maintained in the [Manifesto Tab
 
 ## The Narrative Observatory
 
-The [Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md) is KEY's research system for studying scripts, films, television, novels, games, myths, and other narrative forms.
+The [Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md) is KEY's first research system for studying scripts, films, television, novels, games, myths, and other narrative forms.
 
 It examines how world coherence, character agency, knowledge, desire, fear, consequence, revelation, transformation, resolution, context, and reception interact. Its purpose is to test KEY's assumptions, identify patterns and tradeoffs, and improve Narrative Intelligence through evidence.
+
+The Observatory will later expand to investigate gameplay, game design, player experience, interface, and emergent systems as distinct but interacting research domains.
 
 The [Narrative Research Methodology](docs/research/METHODOLOGY.md) separates direct observation, craft interpretation, audience response, critical response, market context, and historical response. The [Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md) makes studies comparable. The [Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md) records evidence for and against KEY's claims.
 
@@ -119,11 +160,11 @@ Reviews, audience response, commercial results, critical interpretation, exposur
 
 ## Research Continuity
 
-KEY builds upon established work in narratology, computational narratology, interactive drama, drama management, narrative planning, emergent narrative, autonomous agents, automatic story generation, and narrative evaluation.
+KEY builds upon established work in narratology, computational narratology, interactive drama, drama management, narrative planning, emergent narrative, autonomous agents, automatic story generation, game design, player modeling, procedural content generation, adaptive difficulty, simulation, human-computer interaction, and narrative evaluation.
 
-The proposed contribution is not any isolated component. It is the integration of persistent world truth, autonomous human modeling, adaptive story direction, consequence memory, and empirical narrative research into one coherent framework.
+The proposed contribution is not any isolated component. It is the integration of persistent world truth, autonomous human modeling, adaptive story direction, gameplay systems, consequence memory, player experience, and empirical research into one coherent framework.
 
-> KEY is not the invention of Narrative Intelligence. It is an attempt to integrate its fragmented foundations into a coherent, testable, and adaptive system.
+> KEY is not the invention of Narrative Intelligence or adaptive game design. It is an attempt to integrate fragmented foundations into a coherent, testable, and adaptive system.
 
 ## Canonical Reference
 
@@ -140,3 +181,5 @@ The manifesto cover is stored at:
 > Story is not generated text. Story is a structured system of pressure, choice, consequence, memory, and change.
 
 > Structure protects meaning. Flexibility protects agency. Narrative Intelligence must preserve both.
+
+> The vision guides direction. Evidence determines implementation.
