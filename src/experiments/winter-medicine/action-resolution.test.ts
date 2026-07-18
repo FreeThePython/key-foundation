@@ -1,9 +1,15 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 
+import { CanonicalStateStore } from "../../world/canonical-state-store";
 import type { Entity, Event, Memory, Observation, Proposition, WorldTimestamp } from "../../world/primitives";
 import { resolveWinterMedicineAction, type WinterMedicineActionKind } from "./action-resolution";
-import { WINTER_MEDICINE_ENTITIES, createWinterMedicineWorld } from "./genesis";
+import {
+  WINTER_MEDICINE_ENTITIES,
+  WINTER_MEDICINE_RECORDS,
+  WINTER_MEDICINE_WORLD_ID,
+  createWinterMedicineWorld,
+} from "./genesis";
 
 const at = (tick: number): WorldTimestamp => ({
   instant: `2041-01-17T06:${String(30 + tick).padStart(2, "0")}:00.000Z` as WorldTimestamp["instant"],
@@ -125,7 +131,7 @@ test("cabin-only actions are rejected after the player leaves", () => {
   assert.equal(world.worldRevision, 1);
 });
 
-test("replaying the committed action reconstructs the same canonical snapshot", () => {
+test("replaying the committed action reconstructs an equivalent canonical snapshot", () => {
   const world = createWinterMedicineWorld();
   const result = resolveWinterMedicineAction(world, {
     actionId: "replayable-examination",
@@ -135,11 +141,13 @@ test("replaying the committed action reconstructs the same canonical snapshot", 
   });
   assert.equal(result.ok, true);
 
-  const replayed = world.constructor.replay
-    ? undefined
-    : undefined;
+  const replayed = CanonicalStateStore.replay(
+    { worldId: WINTER_MEDICINE_WORLD_ID, initialRecords: WINTER_MEDICINE_RECORDS },
+    world.getHistory(),
+  );
 
-  assert.equal(world.getHistory().length, 1);
-  assert.equal(world.getHistory()[0]?.deterministicSeed, "seed:replayable-examination");
-  assert.equal(replayed, undefined);
+  assert.equal(replayed.worldRevision, world.worldRevision);
+  assert.deepEqual(replayed.list<Event>("event"), world.list<Event>("event"));
+  assert.deepEqual(replayed.list<Observation>("observation"), world.list<Observation>("observation"));
+  assert.deepEqual(replayed.list<Memory>("memory"), world.list<Memory>("memory"));
 });
