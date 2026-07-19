@@ -398,7 +398,7 @@ createServer(async (request, response) => {
         candidates: proposal.candidates,
         interpreter: proposal.interpreter,
         canonicalMutationCount: 0,
-        worldRevision: world.revision,
+        worldRevision: world.worldRevision,
         tick: latestTick(),
       }];
       console.log(`[interpretation ${interpretationSequence}] ${proposal.status} | ${proposal.input} | mutations 0`);
