@@ -35,6 +35,7 @@ const render = (state) => {
     onInterpret: interpretAction,
     onConfirm: confirmProposal,
     onCancel: cancelProposal,
+    onSelectCandidate: selectCandidate,
     proposal: pendingProposal,
     input: pendingInput,
   });
@@ -92,12 +93,32 @@ async function interpretAction(input) {
       body: JSON.stringify({ input }),
     });
     pendingProposal = result.proposal;
-    rerender();
+    render(result.state ?? currentState);
   } catch (error) {
     showError(error);
   } finally {
     setBusy(false);
   }
+}
+
+function selectCandidate(index) {
+  const selected = pendingProposal?.candidates?.[Number(index)];
+  if (!selected) return;
+  pendingProposal = {
+    ...pendingProposal,
+    status: selected.supported ? "accepted" : "rejected",
+    kind: selected.kind,
+    action: selected.action,
+    target: selected.target,
+    intent: selected.intent,
+    confidence: selected.confidence,
+    supported: selected.supported,
+    validation: selected.supported
+      ? "You clarified the request. This implemented action is ready for validation and execution. Canonical reality has not changed yet."
+      : "You clarified the request, but this action is not implemented yet. Canonical reality has not changed.",
+    candidates: [],
+  };
+  rerender();
 }
 
 function confirmProposal() {
