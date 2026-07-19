@@ -37,13 +37,34 @@ const renderRound = (round) => `
     </div>
   </section>`;
 
+const renderCandidates = (candidates = []) => candidates.length ? `
+  <div class="proposal-candidates">
+    <div class="round-label">What did you mean?</div>
+    ${candidates.map((candidate, index) => `
+      <button class="candidate-action" data-candidate-index="${index}">
+        <strong>${escapeHtml(candidate.action)}</strong>
+        <span>${escapeHtml(candidate.intent)} · confidence ${formatValue(candidate.confidence)}${candidate.supported ? " · implemented" : " · not implemented"}</span>
+      </button>`).join("")}
+  </div>` : "";
+
 const renderProposal = (proposal) => {
   if (!proposal) return "";
+  const statusClass = proposal.status === "accepted"
+    ? "proposal-valid"
+    : proposal.status === "clarification_required"
+      ? "proposal-clarification"
+      : "proposal-invalid";
+  const statusLabel = proposal.status === "accepted"
+    ? "Accepted interpretation"
+    : proposal.status === "clarification_required"
+      ? "Clarification required"
+      : "Rejected interpretation";
+
   return `
-    <section class="proposal-card ${proposal.supported ? "proposal-valid" : "proposal-invalid"}">
+    <section class="proposal-card ${statusClass}">
       <div class="story-heading">
         <div>
-          <div class="story-kicker">Interpreted proposal</div>
+          <div class="story-kicker">${statusLabel}</div>
           <div class="story-title">${escapeHtml(proposal.action)}</div>
         </div>
         <div class="story-meta">confidence ${formatValue(proposal.confidence)}</div>
@@ -55,6 +76,7 @@ const renderProposal = (proposal) => {
         <div><span>Interpreter</span>${escapeHtml(proposal.interpreter)}</div>
       </div>
       <div class="proposal-validation">${escapeHtml(proposal.validation)}</div>
+      ${renderCandidates(proposal.candidates)}
       <div class="proposal-actions">
         ${proposal.supported ? '<button class="primary" data-confirm-proposal>Validate and execute</button>' : ""}
         <button data-cancel-proposal>${proposal.supported ? "Cancel" : "Try another action"}</button>
@@ -128,6 +150,9 @@ export const renderPlayerPanel = (state, controls) => {
     if (input) controls.onInterpret(input);
   });
 
+  panel.querySelectorAll("[data-candidate-index]").forEach((button) => {
+    button.addEventListener("click", () => controls.onSelectCandidate(button.dataset.candidateIndex));
+  });
   panel.querySelector("[data-confirm-proposal]")?.addEventListener("click", controls.onConfirm);
   panel.querySelector("[data-cancel-proposal]")?.addEventListener("click", controls.onCancel);
 };
