@@ -88,7 +88,7 @@ The purpose is pattern visibility, not a universal narrative score.
 
 ## Phase VI — Reference Implementation
 
-Status: future.
+Status: active through bounded experiments.
 
 Candidate package structure:
 
@@ -105,12 +105,18 @@ packages/
 
 Milestones:
 
-- [ ] canonical state model
+- [x] initial canonical state model
+- [x] bounded Winter Medicine vertical slice
+- [x] deterministic action interpretation baseline
+- [x] auditable action and state-transition records
+- [ ] stable action proposal contract
+- [ ] modular interpreter interface
+- [ ] action registry and validation taxonomy
 - [ ] situated agent prototype
 - [ ] institutional progression prototype
 - [ ] consequence memory prototype
 - [ ] possibility graph prototype
-- [ ] bounded narrative simulation
+- [ ] broader bounded narrative simulation
 - [ ] human evaluation study
 
 ## Phase VII — Narrative Intelligence Platform
@@ -124,6 +130,37 @@ Status: long-term.
 - educational narrative laboratories
 - persistent virtual civilizations
 
+## Active Engineering Focus — Winter Medicine
+
+Winter Medicine is the current implementation laboratory. It is not the final product or a miniature version of the complete KEY vision.
+
+The active engineering focus is to prove a reliable story-first world loop:
+
+```text
+natural player input
+↓
+interpreted intent
+↓
+validated action proposal
+↓
+canonical state change
+↓
+character and world response
+↓
+continued narrative
+```
+
+Current priorities:
+
+- freeze a stable action proposal contract;
+- preserve the boundary between interpretation and canonical reality;
+- place the deterministic interpreter behind a replaceable interface;
+- expand action validation without allowing AI to mutate world truth;
+- keep time, knowledge, causality, and consequence auditable;
+- evaluate changes by their effect on the player's experience of a living world.
+
+See [KEY North Star](docs/product/KEY-NORTH-STAR.md) for the plain-language connection between the long-term mission and the current experiment.
+
 ## Current Priority
 
-Complete the pilot corpus while testing whether the new ontology and engine requirements can describe each case without forcing the evidence to fit the framework.
+Continue the research program while using Winter Medicine to test whether KEY's constitutional and architectural principles can produce a coherent, understandable, and genuinely responsive playable world. Expansion should follow evidence, not generated scale.
