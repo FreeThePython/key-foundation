@@ -11,6 +11,8 @@ import { resolveWinterMedicineTurn } from "./time-progression";
 const PORT = Number(process.env.PORT ?? 4173);
 const STATIC_ROOT = join(dirname(fileURLToPath(import.meta.url)), "world-lab");
 
+type ProposalStatus = "accepted" | "clarification_required" | "rejected";
+
 interface RuntimeEntry {
   turn: number;
   action: string;
@@ -42,8 +44,18 @@ interface PlayerRound {
   situation: string[];
 }
 
+interface ProposalCandidate {
+  kind: WinterMedicineActionKind | null;
+  action: string;
+  target: string | null;
+  intent: string;
+  confidence: number;
+  supported: boolean;
+}
+
 interface ActionProposal {
   input: string;
+  status: ProposalStatus;
   kind: WinterMedicineActionKind | null;
   action: string;
   actor: string;
@@ -52,12 +64,31 @@ interface ActionProposal {
   confidence: number;
   supported: boolean;
   validation: string;
+  candidates: ProposalCandidate[];
   interpreter: "deterministic-scaffold";
+}
+
+interface InterpretationEntry {
+  attempt: number;
+  input: string;
+  status: ProposalStatus;
+  action: string;
+  intent: string;
+  target: string | null;
+  confidence: number;
+  validation: string;
+  candidates: ProposalCandidate[];
+  interpreter: "deterministic-scaffold";
+  canonicalMutationCount: 0;
+  worldRevision: number;
+  tick: number;
 }
 
 let world = createWinterMedicineWorld();
 let actionSequence = 0;
+let interpretationSequence = 0;
 let runtimeEntries: RuntimeEntry[] = [];
+let interpretationEntries: InterpretationEntry[] = [];
 let playerRounds: PlayerRound[] = [];
 
 const actionLabels: Record<WinterMedicineActionKind, string> = {
@@ -133,9 +164,49 @@ const availableActions = (): Array<{ kind: WinterMedicineActionKind; label: stri
 
 const includesAny = (input: string, terms: string[]): boolean => terms.some((term) => input.includes(term));
 
+const candidate = (
+  kind: WinterMedicineActionKind | null,
+  action: string,
+  target: string | null,
+  intent: string,
+  confidence: number,
+  currentlyAvailable: Set<WinterMedicineActionKind>,
+): ProposalCandidate => ({
+  kind,
+  action,
+  target,
+  intent,
+  confidence,
+  supported: kind !== null && currentlyAvailable.has(kind),
+});
+
 const interpretPlayerInput = (rawInput: string): ActionProposal => {
   const input = rawInput.trim();
   const normalized = input.toLowerCase().replace(/[^a-z0-9'\s-]/g, " ").replace(/\s+/g, " ");
+  const currentlyAvailable = new Set(availableActions().map((entry) => entry.kind));
+
+  if (includesAny(normalized, ["check the cabin", "check cabin", "inspect the cabin", "inspect cabin", "look around the cabin", "look around cabin"])) {
+    const candidates = [
+      candidate("search_cabin", "Search the cabin for medicine or useful supplies", "Mara's Cabin", "locate_medicine", 0.78, currentlyAvailable),
+      candidate(null, "Inspect the cabin for danger", "Mara's Cabin", "assess_environmental_threats", 0.58, currentlyAvailable),
+      candidate(null, "Check the doors and windows", "Mara's Cabin", "inspect_exits_and_security", 0.55, currentlyAvailable),
+    ];
+    return {
+      input,
+      status: "clarification_required",
+      kind: null,
+      action: "Clarification required",
+      actor: "The Traveler",
+      target: "Mara's Cabin",
+      intent: "inspect_location",
+      confidence: 0.62,
+      supported: false,
+      validation: "The verb ‘check’ is ambiguous here. Choose what you mean before anything changes in canonical reality.",
+      candidates,
+      interpreter: "deterministic-scaffold",
+    };
+  }
+
   let kind: WinterMedicineActionKind | null = null;
   let target: string | null = null;
   let intent = "unknown";
@@ -146,7 +217,7 @@ const interpretPlayerInput = (rawInput: string): ActionProposal => {
     target = "Elian";
     intent = "assess_patient";
     confidence = 0.94;
-  } else if (includesAny(normalized, ["search the cabin", "search cabin", "look for medicine", "check the cabinets", "search the shelves", "find medicine"])) {
+  } else if (includesAny(normalized, ["search the cabin", "search cabin", "look for medicine", "check the cabinets", "search the shelves", "find medicine", "look through the cabin", "go through the cabin"])) {
     kind = "search_cabin";
     target = "Mara's Cabin";
     intent = "locate_medicine";
@@ -166,8 +237,8 @@ const interpretPlayerInput = (rawInput: string): ActionProposal => {
     confidence = 0.9;
   }
 
-  const currentlyAvailable = new Set(availableActions().map((entry) => entry.kind));
   const supported = kind !== null && currentlyAvailable.has(kind);
+  const status: ProposalStatus = kind && supported ? "accepted" : "rejected";
   const action = kind ? actionLabels[kind] : "No supported action recognized";
   const validation = !kind
     ? "The interpreter could not map this input to a currently implemented action. Nothing has changed in canonical reality."
@@ -177,6 +248,7 @@ const interpretPlayerInput = (rawInput: string): ActionProposal => {
 
   return {
     input,
+    status,
     kind,
     action,
     actor: "The Traveler",
@@ -185,6 +257,7 @@ const interpretPlayerInput = (rawInput: string): ActionProposal => {
     confidence,
     supported,
     validation,
+    candidates: [],
     interpreter: "deterministic-scaffold",
   };
 };
@@ -215,6 +288,7 @@ const buildView = (notice?: string) => {
     notice,
     actions: availableActions(),
     runtime: runtimeEntries,
+    interpretations: interpretationEntries,
     playerKnowledge: {
       observations: observations.filter((entry) => entry.observerId === player.id).map((entry) => ({
         modality: entry.modality,
@@ -310,13 +384,33 @@ createServer(async (request, response) => {
         sendJson(response, 400, { error: "Enter an action for the interpreter." });
         return;
       }
-      sendJson(response, 200, { proposal: interpretPlayerInput(body.input) });
+      const proposal = interpretPlayerInput(body.input);
+      interpretationSequence += 1;
+      interpretationEntries = [...interpretationEntries, {
+        attempt: interpretationSequence,
+        input: proposal.input,
+        status: proposal.status,
+        action: proposal.action,
+        intent: proposal.intent,
+        target: proposal.target,
+        confidence: proposal.confidence,
+        validation: proposal.validation,
+        candidates: proposal.candidates,
+        interpreter: proposal.interpreter,
+        canonicalMutationCount: 0,
+        worldRevision: world.revision,
+        tick: latestTick(),
+      }];
+      console.log(`[interpretation ${interpretationSequence}] ${proposal.status} | ${proposal.input} | mutations 0`);
+      sendJson(response, 200, { proposal, state: buildView() });
       return;
     }
     if (request.method === "POST" && url.pathname === "/api/reset") {
       world = createWinterMedicineWorld();
       actionSequence = 0;
+      interpretationSequence = 0;
       runtimeEntries = [];
+      interpretationEntries = [];
       playerRounds = [];
       sendJson(response, 200, buildView("The world has been reset to genesis."));
       return;
@@ -345,7 +439,6 @@ createServer(async (request, response) => {
       const elian = getEntity(WINTER_MEDICINE_ENTITIES.elian.id);
       const resultingTick = latestTick();
       const resultingLocation = getLocationName(player.locationId);
-      const resultingSituation = sceneText();
 
       playerRounds = [...playerRounds, {
         round: actionSequence,
@@ -355,7 +448,7 @@ createServer(async (request, response) => {
         resultingTick,
         resultingTime: isoAtTick(resultingTick),
         resultingLocation,
-        situation: resultingSituation,
+        situation: sceneText(),
       }];
 
       runtimeEntries = [...runtimeEntries, {
