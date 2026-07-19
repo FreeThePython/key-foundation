@@ -2,12 +2,15 @@ import { createServer, type IncomingMessage, type ServerResponse } from "node:ht
 import { createWinterMedicineWorld, WINTER_MEDICINE_ENTITIES, WINTER_MEDICINE_GENESIS_TIME } from "./genesis";
 import { resolveWinterMedicineTurn } from "./time-progression";
 import type { WinterMedicineActionKind } from "./action-resolution";
-import type { Belief, Entity, Event, Memory, Observation, Proposition, WorldTimestamp } from "../../world/primitives";
+import type { Belief, Entity, Event, LocationId, Memory, Observation, Proposition, WorldTimestamp } from "../../world/primitives";
 
 const PORT = Number(process.env.PORT ?? 4173);
 
 let world = createWinterMedicineWorld();
 let actionSequence = 0;
+
+const CABIN_LOCATION_ID = WINTER_MEDICINE_ENTITIES.cabin.id as unknown as LocationId;
+const FOREST_ROAD_LOCATION_ID = WINTER_MEDICINE_ENTITIES.forestRoad.id as unknown as LocationId;
 
 const actionLabels: Record<WinterMedicineActionKind, string> = {
   examine_elian: "Examine Elian",
@@ -22,23 +25,23 @@ const isoAtTick = (tick: number): WorldTimestamp["instant"] =>
 const latestTick = (): number =>
   world.list<Event>("event").reduce((maximum, event) => Math.max(maximum, event.occurredAt.tick), 0);
 
-const getEntity = (id: Entity["id"]): Entity => {
+const getEntity = (id: string): Entity => {
   const entity = world.get<Entity>("entity", id);
   if (!entity) throw new Error(`Missing entity ${id}`);
   return entity;
 };
 
-const hasRecord = <T>(recordType: Parameters<typeof world.list<T>>[0], predicate: (record: T) => boolean): boolean =>
-  world.list<T>(recordType).some(predicate);
+const hasObservation = (predicate: (record: Observation) => boolean): boolean =>
+  world.list<Observation>("observation").some(predicate);
 
 const sceneText = (): string[] => {
   const player = getEntity(WINTER_MEDICINE_ENTITIES.player.id);
   const elian = getEntity(WINTER_MEDICINE_ENTITIES.elian.id);
-  const examined = hasRecord<Observation>("observation", (entry) => entry.observerId === player.id && entry.sourceEntityIds.includes(elian.id));
-  const searched = hasRecord<Observation>("observation", (entry) => entry.rawFeatures.cabinetSearched === true);
-  const askedMara = hasRecord<Observation>("observation", (entry) => entry.modality === "testimony" && entry.sourceEntityIds.includes(WINTER_MEDICINE_ENTITIES.mara.id));
+  const examined = hasObservation((entry) => entry.observerId === player.id && entry.sourceEntityIds.includes(elian.id));
+  const searched = hasObservation((entry) => entry.rawFeatures.cabinetSearched === true);
+  const askedMara = hasObservation((entry) => entry.modality === "testimony" && entry.sourceEntityIds.includes(WINTER_MEDICINE_ENTITIES.mara.id));
 
-  if (player.locationId === WINTER_MEDICINE_ENTITIES.forestRoad.id) {
+  if (player.locationId === FOREST_ROAD_LOCATION_ID) {
     return [
       "Snow drives across the North Forest Road and erases your tracks almost as soon as you make them.",
       "Rook's Crossing lies somewhere ahead. Behind you, Elian continues to decline in Mara's cabin.",
@@ -58,7 +61,7 @@ const sceneText = (): string[] => {
 
 const availableActions = (): Array<{ kind: WinterMedicineActionKind; label: string }> => {
   const player = getEntity(WINTER_MEDICINE_ENTITIES.player.id);
-  if (player.locationId !== WINTER_MEDICINE_ENTITIES.cabin.id) return [];
+  if (player.locationId !== CABIN_LOCATION_ID) return [];
   return (Object.keys(actionLabels) as WinterMedicineActionKind[]).map((kind) => ({ kind, label: actionLabels[kind] }));
 };
 
@@ -76,7 +79,7 @@ const buildView = (notice?: string) => {
     title: "Winter Medicine",
     time: isoAtTick(tick),
     tick,
-    location: getEntity(player.locationId ?? WINTER_MEDICINE_ENTITIES.cabin.id).canonicalName,
+    location: getEntity(player.locationId ?? CABIN_LOCATION_ID).canonicalName,
     scene: sceneText(),
     notice,
     actions: availableActions(),
@@ -149,7 +152,7 @@ const html = `<!doctype html>
 <header class="top"><div><h1>KEY World Lab: Winter Medicine</h1><div class="meta">Player experience synchronized with canonical reality and agent cognition</div></div><button class="secondary" onclick="resetWorld()">Reset world</button></header>
 <main class="layout"><section class="panel" id="player"></section><section class="panel" id="canonical"></section><section class="panel" id="cognition"></section></main>
 <script>
-const esc=(v)=>String(v).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const esc=(v)=>String(v).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));
 const fmt=(v)=>typeof v==='number'?Number(v).toFixed(3).replace(/0+$/,'').replace(/\.$/,''):esc(v);
 async function load(){const r=await fetch('/api/state');render(await r.json())}
 async function act(kind){const r=await fetch('/api/action',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({kind})});render(await r.json())}
