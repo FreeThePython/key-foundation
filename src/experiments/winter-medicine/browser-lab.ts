@@ -31,9 +31,21 @@ interface RuntimeEntry {
   };
 }
 
+interface PlayerRound {
+  round: number;
+  action: string;
+  response: string;
+  elapsedMinutes: number;
+  resultingTick: number;
+  resultingTime: WorldTimestamp["instant"];
+  resultingLocation: string;
+  situation: string[];
+}
+
 let world = createWinterMedicineWorld();
 let actionSequence = 0;
 let runtimeEntries: RuntimeEntry[] = [];
+let playerRounds: PlayerRound[] = [];
 
 const actionLabels: Record<WinterMedicineActionKind, string> = {
   examine_elian: "Examine Elian",
@@ -41,6 +53,18 @@ const actionLabels: Record<WinterMedicineActionKind, string> = {
   ask_mara_about_medicine: "Ask Mara about the medicine",
   begin_journey_to_rooks_crossing: "Leave for Rook's Crossing",
 };
+
+const actionResponses: Record<WinterMedicineActionKind, string> = {
+  examine_elian: "You kneel beside Elian and examine him. His skin is burning hot, his breathing is rapid, and he does not respond to you.",
+  search_cabin: "You search Mara's shelves and cabinet carefully. You find no medicine you can identify as effective for Elian's condition.",
+  ask_mara_about_medicine: "Mara tells you that Rook's Crossing had an apothecary last winter, but she cannot promise that medicine remains there now.",
+  begin_journey_to_rooks_crossing: "You leave the warmth of the cabin and step onto the North Forest Road. Driving snow begins covering your tracks behind you.",
+};
+
+const genesisScene = [
+  "Snow strikes the cabin windows hard enough to rattle the frames.",
+  "Elian lies motionless near the fire. Mara kneels beside him while Tomas watches her with open suspicion.",
+];
 
 const isoAtTick = (tick: number): WorldTimestamp["instant"] =>
   new Date(Date.parse(WINTER_MEDICINE_GENESIS_TIME.instant) + tick * 5 * 60_000).toISOString() as WorldTimestamp["instant"];
@@ -80,13 +104,10 @@ const sceneText = (): string[] => {
     ];
   }
 
-  const lines = [
-    "Snow strikes the cabin windows hard enough to rattle the frames.",
-    "Elian lies motionless near the fire. Mara kneels beside him while Tomas watches her with open suspicion.",
-  ];
-  if (examined) lines.push("You have confirmed that Elian is burning with fever, breathing rapidly, and dangerously unresponsive.");
-  if (searched) lines.push("You searched Mara's shelves and cabinet but found no medicine you could identify as effective.");
-  if (askedMara) lines.push("Mara remembers an apothecary at Rook's Crossing last winter, but she cannot confirm what remains there now.");
+  const lines = [...genesisScene];
+  if (examined) lines.push("You know Elian is burning with fever, breathing rapidly, and dangerously unresponsive.");
+  if (searched) lines.push("The cabin search revealed no medicine you could identify as effective.");
+  if (askedMara) lines.push("Your only lead is Mara's uncertain memory of an apothecary at Rook's Crossing.");
   if (latestTick() >= 4) lines.push("The delay is becoming visible. Elian's breathing sounds harsher than it did when you arrived.");
   return lines;
 };
@@ -112,6 +133,13 @@ const buildView = (notice?: string) => {
     time: isoAtTick(tick),
     tick,
     location: getLocationName(player.locationId),
+    genesis: {
+      title: "Genesis",
+      time: WINTER_MEDICINE_GENESIS_TIME.instant,
+      location: getLocationName(WINTER_MEDICINE_ENTITIES.player.locationId),
+      scene: genesisScene,
+    },
+    rounds: playerRounds,
     scene: sceneText(),
     notice,
     actions: availableActions(),
@@ -209,6 +237,7 @@ createServer(async (request, response) => {
       world = createWinterMedicineWorld();
       actionSequence = 0;
       runtimeEntries = [];
+      playerRounds = [];
       sendJson(response, 200, buildView("The world has been reset to genesis."));
       return;
     }
@@ -234,6 +263,21 @@ createServer(async (request, response) => {
       const elapsed = Number(result.time.event.payload.elapsedMinutes);
       const player = getEntity(WINTER_MEDICINE_ENTITIES.player.id);
       const elian = getEntity(WINTER_MEDICINE_ENTITIES.elian.id);
+      const resultingTick = latestTick();
+      const resultingLocation = getLocationName(player.locationId);
+      const resultingSituation = sceneText();
+
+      playerRounds = [...playerRounds, {
+        round: actionSequence,
+        action: actionLabels[body.kind],
+        response: actionResponses[body.kind],
+        elapsedMinutes: elapsed,
+        resultingTick,
+        resultingTime: isoAtTick(resultingTick),
+        resultingLocation,
+        situation: resultingSituation,
+      }];
+
       runtimeEntries = [...runtimeEntries, {
         turn: actionSequence,
         action: actionLabels[body.kind],
@@ -245,16 +289,16 @@ createServer(async (request, response) => {
         actionMutationCount: result.action.commit.appliedMutationIds.length,
         timeMutationCount: result.time.commit.appliedMutationIds.length,
         worldRevision: result.time.commit.worldRevision,
-        resultingTick: latestTick(),
-        resultingLocation: getLocationName(player.locationId),
+        resultingTick,
+        resultingLocation,
         elian: {
           bodyTemperatureC: elian.attributes.bodyTemperatureC,
           hydration: elian.attributes.hydration,
           respiratoryDistress: elian.attributes.respiratoryDistress,
         },
       }];
-      console.log(`[turn ${actionSequence}] ${body.kind} | ${elapsed}m | tick ${latestTick()} | revision ${result.time.commit.worldRevision}`);
-      sendJson(response, 200, buildView(`${actionLabels[body.kind]} completed. ${String(elapsed)} minutes passed.`));
+      console.log(`[turn ${actionSequence}] ${body.kind} | ${elapsed}m | tick ${resultingTick} | revision ${result.time.commit.worldRevision}`);
+      sendJson(response, 200, buildView());
       return;
     }
     if (request.method === "GET" && await serveStatic(url.pathname, response)) return;
