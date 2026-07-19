@@ -37,7 +37,32 @@ const renderRound = (round) => `
     </div>
   </section>`;
 
-export const renderPlayerPanel = (state, onAction) => {
+const renderProposal = (proposal) => {
+  if (!proposal) return "";
+  return `
+    <section class="proposal-card ${proposal.supported ? "proposal-valid" : "proposal-invalid"}">
+      <div class="story-heading">
+        <div>
+          <div class="story-kicker">Interpreted proposal</div>
+          <div class="story-title">${escapeHtml(proposal.action)}</div>
+        </div>
+        <div class="story-meta">confidence ${formatValue(proposal.confidence)}</div>
+      </div>
+      <div class="proposal-grid">
+        <div><span>Actor</span>${escapeHtml(proposal.actor)}</div>
+        <div><span>Intent</span>${escapeHtml(proposal.intent)}</div>
+        <div><span>Target</span>${escapeHtml(proposal.target ?? "Not resolved")}</div>
+        <div><span>Interpreter</span>${escapeHtml(proposal.interpreter)}</div>
+      </div>
+      <div class="proposal-validation">${escapeHtml(proposal.validation)}</div>
+      <div class="proposal-actions">
+        ${proposal.supported ? '<button class="primary" data-confirm-proposal>Validate and execute</button>' : ""}
+        <button data-cancel-proposal>${proposal.supported ? "Cancel" : "Try another action"}</button>
+      </div>
+    </section>`;
+};
+
+export const renderPlayerPanel = (state, controls) => {
   const panel = document.getElementById("player-panel");
   if (!panel) throw new Error("Missing player panel");
 
@@ -67,12 +92,23 @@ export const renderPlayerPanel = (state, onAction) => {
     </div>
     <div class="section-title">Current situation</div>
     <div class="scene current-scene">${state.scene.map((line) => `<p>${escapeHtml(line)}</p>`).join("")}</div>
-    <div class="section-title">Choose your next action</div>
-    <div class="actions">
-      ${state.actions.length
-        ? state.actions.map((action) => `<button class="primary" data-action="${escapeHtml(action.kind)}">${escapeHtml(action.label)}</button>`).join("")
-        : '<div class="empty">No further player actions are implemented from this location yet.</div>'}
+    <div class="section-title">Free interaction</div>
+    <div class="free-interaction">
+      <div class="free-interaction-copy">Describe what you attempt in ordinary language. The interpreter creates a proposal first; canonical reality does not change until the proposal is validated and executed.</div>
+      <form data-free-action-form>
+        <textarea data-free-action-input rows="3" placeholder="Example: I check Elian's breathing and see whether he responds.">${escapeHtml(controls.input ?? "")}</textarea>
+        <button type="submit">Interpret action</button>
+      </form>
+      ${renderProposal(controls.proposal)}
     </div>
+    <details class="canned-actions">
+      <summary>Canned actions for testing</summary>
+      <div class="actions">
+        ${state.actions.length
+          ? state.actions.map((action) => `<button class="primary" data-action="${escapeHtml(action.kind)}">${escapeHtml(action.label)}</button>`).join("")
+          : '<div class="empty">No further player actions are implemented from this location yet.</div>'}
+      </div>
+    </details>
     <details class="player-debug">
       <summary>Player knowledge and memory</summary>
       <div class="section-title">Player observations</div>
@@ -83,6 +119,15 @@ export const renderPlayerPanel = (state, onAction) => {
   `;
 
   panel.querySelectorAll("[data-action]").forEach((button) => {
-    button.addEventListener("click", () => onAction(button.dataset.action));
+    button.addEventListener("click", () => controls.onAction(button.dataset.action));
   });
+
+  panel.querySelector("[data-free-action-form]")?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const input = panel.querySelector("[data-free-action-input]")?.value?.trim();
+    if (input) controls.onInterpret(input);
+  });
+
+  panel.querySelector("[data-confirm-proposal]")?.addEventListener("click", controls.onConfirm);
+  panel.querySelector("[data-cancel-proposal]")?.addEventListener("click", controls.onCancel);
 };
