@@ -1,6 +1,7 @@
 import { renderCanonicalPanel } from "./panels/canonical.js";
 import { renderCognitionPanel } from "./panels/cognition.js";
 import { renderPlayerPanel } from "./panels/player.js";
+import { renderRuntimePanel } from "./panels/runtime.js";
 import { requireElement } from "./ui.js";
 
 const meta = requireElement("world-meta");
@@ -27,6 +28,7 @@ const render = (state) => {
   renderPlayerPanel(state, performAction);
   renderCanonicalPanel(state);
   renderCognitionPanel(state);
+  renderRuntimePanel(state);
   fatalError.hidden = true;
 };
 
