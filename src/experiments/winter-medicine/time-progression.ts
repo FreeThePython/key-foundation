@@ -113,7 +113,8 @@ export const advanceWinterMedicineTime = (
   const causeEventId = request.causeEventId ?? latest?.id ?? WINTER_MEDICINE_GENESIS_EVENT.id;
   const toTick = request.fromTick + request.ticks;
   const elapsedMinutes = request.ticks * WINTER_MEDICINE_MINUTES_PER_TICK;
-  const playerOnRoad = player.locationId === WINTER_MEDICINE_ENTITIES.forestRoad.id;
+  const forestRoadLocationId = WINTER_MEDICINE_ENTITIES.forestRoad.id as unknown as Entity["locationId"];
+  const playerOnRoad = player.locationId === forestRoadLocationId;
   const producedMutationIds = playerOnRoad
     ? [eventMutationId, elianMutationId, playerMutationId]
     : [eventMutationId, elianMutationId];
