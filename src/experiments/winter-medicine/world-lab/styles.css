@@ -76,6 +76,10 @@ button:disabled { cursor: wait; opacity: .6; }
 .value { margin-top: 4px; overflow-wrap: anywhere; }
 .metric-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .metric-grid .card { margin: 0; }
+.metric-grid .value { font-size: 20px; font-weight: 750; }
+.metric-status { margin-top: 4px; color: #c9d1d9; font-size: 12px; font-weight: 650; }
+.metric-note { margin-top: 7px; color: #6e7681; font-size: 10px; line-height: 1.35; }
+.raw-values { margin-top: 12px; }
 .danger { color: #ff7b72; }
 .good { color: #7ee787; }
 .unknown { color: #d2a8ff; }
