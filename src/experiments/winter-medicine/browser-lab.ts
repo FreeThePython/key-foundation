@@ -11,8 +11,29 @@ import { resolveWinterMedicineTurn } from "./time-progression";
 const PORT = Number(process.env.PORT ?? 4173);
 const STATIC_ROOT = join(dirname(fileURLToPath(import.meta.url)), "world-lab");
 
+interface RuntimeEntry {
+  turn: number;
+  action: string;
+  actionKind: string;
+  accepted: boolean;
+  elapsedMinutes: number;
+  actionEvent: string;
+  timeEvent: string;
+  actionMutationCount: number;
+  timeMutationCount: number;
+  worldRevision: number;
+  resultingTick: number;
+  resultingLocation: string;
+  elian: {
+    bodyTemperatureC: unknown;
+    hydration: unknown;
+    respiratoryDistress: unknown;
+  };
+}
+
 let world = createWinterMedicineWorld();
 let actionSequence = 0;
+let runtimeEntries: RuntimeEntry[] = [];
 
 const actionLabels: Record<WinterMedicineActionKind, string> = {
   examine_elian: "Examine Elian",
@@ -94,6 +115,7 @@ const buildView = (notice?: string) => {
     scene: sceneText(),
     notice,
     actions: availableActions(),
+    runtime: runtimeEntries,
     playerKnowledge: {
       observations: observations.filter((entry) => entry.observerId === player.id).map((entry) => ({
         modality: entry.modality,
@@ -186,6 +208,7 @@ createServer(async (request, response) => {
     if (request.method === "POST" && url.pathname === "/api/reset") {
       world = createWinterMedicineWorld();
       actionSequence = 0;
+      runtimeEntries = [];
       sendJson(response, 200, buildView("The world has been reset to genesis."));
       return;
     }
@@ -208,7 +231,29 @@ createServer(async (request, response) => {
         sendJson(response, 409, buildView(result.message));
         return;
       }
-      const elapsed = result.time.event.payload.elapsedMinutes;
+      const elapsed = Number(result.time.event.payload.elapsedMinutes);
+      const player = getEntity(WINTER_MEDICINE_ENTITIES.player.id);
+      const elian = getEntity(WINTER_MEDICINE_ENTITIES.elian.id);
+      runtimeEntries = [...runtimeEntries, {
+        turn: actionSequence,
+        action: actionLabels[body.kind],
+        actionKind: body.kind,
+        accepted: true,
+        elapsedMinutes: elapsed,
+        actionEvent: result.action.event.descriptionCode,
+        timeEvent: result.time.event.descriptionCode,
+        actionMutationCount: result.action.commit.appliedMutationIds.length,
+        timeMutationCount: result.time.commit.appliedMutationIds.length,
+        worldRevision: result.time.commit.worldRevision,
+        resultingTick: latestTick(),
+        resultingLocation: getLocationName(player.locationId),
+        elian: {
+          bodyTemperatureC: elian.attributes.bodyTemperatureC,
+          hydration: elian.attributes.hydration,
+          respiratoryDistress: elian.attributes.respiratoryDistress,
+        },
+      }];
+      console.log(`[turn ${actionSequence}] ${body.kind} | ${elapsed}m | tick ${latestTick()} | revision ${result.time.commit.worldRevision}`);
       sendJson(response, 200, buildView(`${actionLabels[body.kind]} completed. ${String(elapsed)} minutes passed.`));
       return;
     }
