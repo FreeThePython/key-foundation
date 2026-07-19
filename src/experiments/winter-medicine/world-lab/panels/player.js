@@ -21,20 +21,19 @@ const renderRound = (round) => `
         <div class="story-kicker">Round ${formatValue(round.round)}</div>
         <div class="story-title">${escapeHtml(round.action)}</div>
       </div>
-      <div class="story-meta">${formatValue(round.elapsedMinutes)} minutes · Tick ${formatValue(round.resultingTick)}</div>
+      <div class="story-meta">${escapeHtml(formatClock(round.resultingTime))} · ${escapeHtml(round.resultingLocation)}</div>
     </div>
     <div class="round-row">
-      <div class="round-label">Action</div>
+      <div class="round-label">Decision</div>
       <div>${escapeHtml(round.action)}</div>
     </div>
     <div class="round-row">
-      <div class="round-label">Response</div>
+      <div class="round-label">What changed</div>
       <div>${escapeHtml(round.response)}</div>
     </div>
-    <div class="round-result">
-      <div class="round-label">Resulting situation</div>
-      ${round.situation.map((line) => `<p>${escapeHtml(line)}</p>`).join("")}
-      <div class="story-meta">${escapeHtml(formatClock(round.resultingTime))} · ${escapeHtml(round.resultingLocation)}</div>
+    <div class="round-row consequence-row">
+      <div class="round-label">Consequence</div>
+      <div>${formatValue(round.elapsedMinutes)} minutes passed. The world advanced to tick ${formatValue(round.resultingTick)}.</div>
     </div>
   </section>`;
 
@@ -60,7 +59,7 @@ export const renderPlayerPanel = (state, onAction) => {
 
   panel.innerHTML = `
     <h2 class="panel-title">Player Experience</h2>
-    <div class="panel-subtitle">The story is separated into decisions and consequences.</div>
+    <div class="panel-subtitle">Genesis establishes the world once. Each round shows only the decision and what changed.</div>
     ${state.notice ? `<div class="notice">${escapeHtml(state.notice)}</div>` : ""}
     <div class="story-history">
       ${renderGenesis(state.genesis)}
