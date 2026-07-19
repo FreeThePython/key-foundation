@@ -42,6 +42,19 @@ interface PlayerRound {
   situation: string[];
 }
 
+interface ActionProposal {
+  input: string;
+  kind: WinterMedicineActionKind | null;
+  action: string;
+  actor: string;
+  target: string | null;
+  intent: string;
+  confidence: number;
+  supported: boolean;
+  validation: string;
+  interpreter: "deterministic-scaffold";
+}
+
 let world = createWinterMedicineWorld();
 let actionSequence = 0;
 let runtimeEntries: RuntimeEntry[] = [];
@@ -116,6 +129,64 @@ const availableActions = (): Array<{ kind: WinterMedicineActionKind; label: stri
   const player = getEntity(WINTER_MEDICINE_ENTITIES.player.id);
   if (!isAt(player, WINTER_MEDICINE_ENTITIES.cabin)) return [];
   return (Object.keys(actionLabels) as WinterMedicineActionKind[]).map((kind) => ({ kind, label: actionLabels[kind] }));
+};
+
+const includesAny = (input: string, terms: string[]): boolean => terms.some((term) => input.includes(term));
+
+const interpretPlayerInput = (rawInput: string): ActionProposal => {
+  const input = rawInput.trim();
+  const normalized = input.toLowerCase().replace(/[^a-z0-9'\s-]/g, " ").replace(/\s+/g, " ");
+  let kind: WinterMedicineActionKind | null = null;
+  let target: string | null = null;
+  let intent = "unknown";
+  let confidence = 0.2;
+
+  if (includesAny(normalized, ["examine elian", "check elian", "look at elian", "inspect elian", "check his breathing", "check the patient"])) {
+    kind = "examine_elian";
+    target = "Elian";
+    intent = "assess_patient";
+    confidence = 0.94;
+  } else if (includesAny(normalized, ["search the cabin", "search cabin", "look for medicine", "check the cabinets", "search the shelves", "find medicine"])) {
+    kind = "search_cabin";
+    target = "Mara's Cabin";
+    intent = "locate_medicine";
+    confidence = 0.92;
+  } else if (
+    includesAny(normalized, ["ask mara", "talk to mara", "question mara"]) &&
+    includesAny(normalized, ["medicine", "apothecary", "help", "where"])
+  ) {
+    kind = "ask_mara_about_medicine";
+    target = "Mara";
+    intent = "request_information";
+    confidence = 0.91;
+  } else if (includesAny(normalized, ["rook's crossing", "rooks crossing", "leave the cabin", "head out", "take the road", "go outside"])) {
+    kind = "begin_journey_to_rooks_crossing";
+    target = "Rook's Crossing";
+    intent = "begin_journey";
+    confidence = 0.9;
+  }
+
+  const currentlyAvailable = new Set(availableActions().map((entry) => entry.kind));
+  const supported = kind !== null && currentlyAvailable.has(kind);
+  const action = kind ? actionLabels[kind] : "No supported action recognized";
+  const validation = !kind
+    ? "The interpreter could not map this input to a currently implemented action. Nothing has changed in canonical reality."
+    : supported
+      ? "The proposal maps to an implemented action and is valid in the player's current location. It has not executed yet."
+      : "The intent was recognized, but the proposed action is not valid in the player's current situation. Nothing has changed in canonical reality.";
+
+  return {
+    input,
+    kind,
+    action,
+    actor: "The Traveler",
+    target,
+    intent,
+    confidence,
+    supported,
+    validation,
+    interpreter: "deterministic-scaffold",
+  };
 };
 
 const buildView = (notice?: string) => {
@@ -231,6 +302,15 @@ createServer(async (request, response) => {
     const url = new URL(request.url ?? "/", `http://${request.headers.host ?? "localhost"}`);
     if (request.method === "GET" && url.pathname === "/api/state") {
       sendJson(response, 200, buildView());
+      return;
+    }
+    if (request.method === "POST" && url.pathname === "/api/interpret") {
+      const body = JSON.parse(await readBody(request)) as { input?: string };
+      if (!body.input?.trim()) {
+        sendJson(response, 400, { error: "Enter an action for the interpreter." });
+        return;
+      }
+      sendJson(response, 200, { proposal: interpretPlayerInput(body.input) });
       return;
     }
     if (request.method === "POST" && url.pathname === "/api/reset") {
