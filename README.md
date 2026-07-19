@@ -10,39 +10,40 @@ This repository is the source of truth for the Constitution, manifesto, canonica
 
 ## Start Here
 
-1. [The Constitution of KEY](CONSTITUTION.md)
-2. [The KEY Manifesto](docs/manifesto/README.md)
-3. [The KEY Lexicon](docs/lexicon/README.md)
-4. [KEY Vision](docs/vision/KEY-VISION.md)
-5. [KEY World and Experience Intelligence](docs/vision/KEY-WORLD-AND-EXPERIENCE-INTELLIGENCE.md)
-6. [KEY Engineering Principles](docs/engineering/KEY-ENGINEERING-PRINCIPLES.md)
-7. [Narrative Ontology](docs/foundation/NARRATIVE-ONTOLOGY.md)
-8. [Narrative Physics](docs/foundation/NARRATIVE-PHYSICS.md)
-9. [The KEY Research Agenda](docs/research/RESEARCH-AGENDA.md)
-10. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
-11. [Narrative Research Methodology](docs/research/METHODOLOGY.md)
-12. [Narrative Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md)
-13. [Narrative Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md)
-14. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
-15. [World Engine Specification](docs/engines/WORLD-ENGINE.md)
-16. [Human Engine Specification](docs/engines/HUMAN-ENGINE.md)
-17. [Story Engine Specification](docs/engines/STORY-ENGINE.md)
-18. [Memory Engine Specification](docs/engines/MEMORY-ENGINE.md)
-19. [Evaluation Engine Specification](docs/engines/EVALUATION-ENGINE.md)
-20. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
-21. [Prototype Blueprint v1](docs/product/PROTOTYPE-BLUEPRINT-V1.md)
-22. [EXPERIMENT-0001 — The Room](docs/product/experiments/EXPERIMENT-0001-THE-ROOM.md)
-23. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
-24. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
-25. [Living Roadmap](ROADMAP.md)
-26. [Scientific Changelog](CHANGELOG.md)
-27. [Codex and Agent Instructions](AGENTS.md)
+1. [KEY North Star — Plain-Language Mission and Current Focus](docs/product/KEY-NORTH-STAR.md)
+2. [The Constitution of KEY](CONSTITUTION.md)
+3. [The KEY Manifesto](docs/manifesto/README.md)
+4. [The KEY Lexicon](docs/lexicon/README.md)
+5. [KEY Vision](docs/vision/KEY-VISION.md)
+6. [KEY World and Experience Intelligence](docs/vision/KEY-WORLD-AND-EXPERIENCE-INTELLIGENCE.md)
+7. [KEY Engineering Principles](docs/engineering/KEY-ENGINEERING-PRINCIPLES.md)
+8. [Narrative Ontology](docs/foundation/NARRATIVE-ONTOLOGY.md)
+9. [Narrative Physics](docs/foundation/NARRATIVE-PHYSICS.md)
+10. [The KEY Research Agenda](docs/research/RESEARCH-AGENDA.md)
+11. [The Narrative Observatory](docs/research/NARRATIVE-OBSERVATORY.md)
+12. [Narrative Research Methodology](docs/research/METHODOLOGY.md)
+13. [Narrative Case Study Template](docs/research/CASE-STUDY-TEMPLATE.md)
+14. [Narrative Hypothesis Register](docs/research/HYPOTHESIS-REGISTER.md)
+15. [Prior Art and Research Landscape](docs/research/PRIOR-ART-AND-RESEARCH-LANDSCAPE.md)
+16. [World Engine Specification](docs/engines/WORLD-ENGINE.md)
+17. [Human Engine Specification](docs/engines/HUMAN-ENGINE.md)
+18. [Story Engine Specification](docs/engines/STORY-ENGINE.md)
+19. [Memory Engine Specification](docs/engines/MEMORY-ENGINE.md)
+20. [Evaluation Engine Specification](docs/engines/EVALUATION-ENGINE.md)
+21. [Prototype Definition](docs/product/PROTOTYPE-DEFINITION.md)
+22. [Prototype Blueprint v1](docs/product/PROTOTYPE-BLUEPRINT-V1.md)
+23. [EXPERIMENT-0001 — The Room](docs/product/experiments/EXPERIMENT-0001-THE-ROOM.md)
+24. [Architecture Constitution](docs/architecture/KEY-CONSTITUTION.md)
+25. [Evaluation Framework](docs/evaluation/KEY-EVALUATION-FRAMEWORK.md)
+26. [Living Roadmap](ROADMAP.md)
+27. [Scientific Changelog](CHANGELOG.md)
+28. [Codex and Agent Instructions](AGENTS.md)
 
 ## Foundational Order
 
 The [Constitution of KEY](CONSTITUTION.md) defines the principles that take precedence over every downstream document and implementation.
 
-The Manifesto explains those principles. The Lexicon gives them canonical language. The North Star vision protects the full destination. Engineering Principles govern how the project learns. The Narrative Ontology defines what the first formal systems must represent. Narrative Physics records provisional relationships among state, agency, pressure, knowledge, consequence, and possibility. Research tests those assumptions. Engine specifications translate supported findings into requirements. The prototype program tests one bounded behavior at a time. Code remains a replaceable implementation of an enduring purpose.
+The [KEY North Star](docs/product/KEY-NORTH-STAR.md) provides the shortest plain-language connection between those enduring principles, the player experience KEY is trying to create, and the current Winter Medicine implementation work. The Manifesto explains the foundational principles in depth. The Lexicon gives them canonical language. The broader vision protects the full destination. Engineering Principles govern how the project learns. The Narrative Ontology defines what the first formal systems must represent. Narrative Physics records provisional relationships among state, agency, pressure, knowledge, consequence, and possibility. Research tests those assumptions. Engine specifications translate supported findings into requirements. The prototype program tests one bounded behavior at a time. Code remains a replaceable implementation of an enduring purpose.
 
 ## The Full Vision and the First Experiment
 
