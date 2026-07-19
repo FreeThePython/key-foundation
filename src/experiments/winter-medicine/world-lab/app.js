@@ -8,10 +8,14 @@ const meta = requireElement("world-meta");
 const resetButton = requireElement("reset-button");
 const fatalError = requireElement("fatal-error");
 
+let currentState = null;
+let pendingProposal = null;
+let pendingInput = "";
+
 const setBusy = (busy) => {
   resetButton.disabled = busy;
-  document.querySelectorAll("[data-action]").forEach((button) => {
-    button.disabled = busy;
+  document.querySelectorAll("button, textarea").forEach((element) => {
+    element.disabled = busy;
   });
 };
 
@@ -23,13 +27,25 @@ const requestJson = async (url, options) => {
 };
 
 const render = (state) => {
+  currentState = state;
   const time = new Date(state.time).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
   meta.textContent = `${state.world.title} · Tick ${state.tick} · ${time} · ${state.location}`;
-  renderPlayerPanel(state, performAction);
+  renderPlayerPanel(state, {
+    onAction: performAction,
+    onInterpret: interpretAction,
+    onConfirm: confirmProposal,
+    onCancel: cancelProposal,
+    proposal: pendingProposal,
+    input: pendingInput,
+  });
   renderCanonicalPanel(state);
   renderCognitionPanel(state);
   renderRuntimePanel(state);
   fatalError.hidden = true;
+};
+
+const rerender = () => {
+  if (currentState) render(currentState);
 };
 
 const showError = (error) => {
@@ -52,6 +68,8 @@ async function performAction(kind) {
   if (!kind) return;
   setBusy(true);
   try {
+    pendingProposal = null;
+    pendingInput = "";
     render(await requestJson("/api/action", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -64,9 +82,39 @@ async function performAction(kind) {
   }
 }
 
+async function interpretAction(input) {
+  pendingInput = input;
+  setBusy(true);
+  try {
+    const result = await requestJson("/api/interpret", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ input }),
+    });
+    pendingProposal = result.proposal;
+    rerender();
+  } catch (error) {
+    showError(error);
+  } finally {
+    setBusy(false);
+  }
+}
+
+function confirmProposal() {
+  if (!pendingProposal?.supported || !pendingProposal.kind) return;
+  performAction(pendingProposal.kind);
+}
+
+function cancelProposal() {
+  pendingProposal = null;
+  rerender();
+}
+
 async function resetWorld() {
   setBusy(true);
   try {
+    pendingProposal = null;
+    pendingInput = "";
     render(await requestJson("/api/reset", { method: "POST" }));
   } catch (error) {
     showError(error);
