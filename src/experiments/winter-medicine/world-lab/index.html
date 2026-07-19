@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KEY World Lab</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">KEY Cognitive World Model</div>
+      <h1>World Lab</h1>
+      <div id="world-meta" class="meta">Loading world…</div>
+    </div>
+    <div class="toolbar">
+      <label>
+        World
+        <select id="world-select" disabled>
+          <option>Winter Medicine</option>
+        </select>
+      </label>
+      <button id="reset-button" class="secondary">Reset world</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section id="player-panel" class="panel player-panel"></section>
+    <section id="canonical-panel" class="panel"></section>
+    <section id="cognition-panel" class="panel"></section>
+  </main>
+
+  <div id="fatal-error" class="fatal-error" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
